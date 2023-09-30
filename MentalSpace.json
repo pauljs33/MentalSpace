@@ -312,6 +312,26 @@
         "name": "assets\\Person2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "in-the-silence-brock-hewitt-stories-in-sound-main-version-03-42-9707.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "in-the-silence-brock-hewitt-stories-in-sound-main-version-03-42-9707.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "requiem-sarah-spring-sonder-house-main-version-02-59-9991.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "requiem-sarah-spring-sonder-house-main-version-02-59-9991.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

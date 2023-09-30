@@ -999,6 +999,34 @@
       "conditions": [
         {
           "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "requiem-sarah-spring-sonder-house-main-version-02-59-9991.mp3",
+            "yes",
+            "50",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "GlobalVariableAsBoolean"
           },
           "parameters": [
@@ -1288,6 +1316,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1498,6 +1527,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Text drag",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
