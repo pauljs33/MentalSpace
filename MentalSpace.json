@@ -195,6 +195,96 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
           "name": "mononoki-Regular.ttf"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Perso1Line.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Perso1Line.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Perso1Line2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Perso1Line2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Perso1Line3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Perso1Line3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Perso1Line3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Perso1Line3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Perso1détail.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Perso1détail.png\",\"extension\":\".png\"}",
+        "name": "Perso1détail.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Perso1Line4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Perso1Line4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Perso1color.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Perso1color.png\",\"extension\":\".png\"}",
+        "name": "Perso1color.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Boss.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Boss.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Person2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Person2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/line.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "line",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
