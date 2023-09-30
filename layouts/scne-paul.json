@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5800155239904864,
+    "zoomFactor": 0.49138775453293565,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -127,8 +127,8 @@
       "name": "EmptyTextSpawn",
       "persistentUuid": "0bc95da4-a886-4e28-8eb4-6ae01a0bc922",
       "width": 0,
-      "x": 1548,
-      "y": 348,
+      "x": 1108,
+      "y": 329,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -721,6 +721,17 @@
         },
         {
           "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "TextAnswerHolder",
+            "Opacity",
+            "=",
+            "150"
+          ]
+        },
+        {
+          "type": {
             "value": "BBText::SetWrappingWidth"
           },
           "parameters": [
@@ -978,33 +989,6 @@
             "TextHolder",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "TextAnswerHolder",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Person1",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetGlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "DialogueStatus",
-            ""
-          ]
         }
       ],
       "events": [
@@ -1096,19 +1080,48 @@
       "actions": [
         {
           "type": {
-            "value": "Delete"
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
-            "TextHolder",
-            ""
+            "TextAnswerHolder",
+            "Opacity",
+            "=",
+            "255"
           ]
         },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"DialogueCharaTimer\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"DialogueCharaTimer\"",
+            ">=",
+            "4"
+          ]
+        }
+      ],
+      "actions": [
         {
           "type": {
             "value": "Delete"
           },
           "parameters": [
-            "TextAnswerHolder",
+            "TextHolder",
             ""
           ]
         },
@@ -1123,11 +1136,29 @@
         },
         {
           "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "TextAnswerHolder",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "SetGlobalVariableAsBoolean"
           },
           "parameters": [
             "DialogueStatus",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "RemoveTimer"
+          },
+          "parameters": [
+            "",
+            "\"DialogueCharaTimer\""
           ]
         }
       ]
