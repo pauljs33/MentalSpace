@@ -18,39 +18,23 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.49138775453293565,
+    "zoomFactor": 0.5427920802473278,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
     {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 819,
-      "layer": "",
-      "name": "BrainPerson",
-      "persistentUuid": "08adebd5-b2cb-4254-86f2-66d1ac83597f",
-      "width": 837,
-      "x": 63,
-      "y": -10,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 332,
+      "angle": 323,
       "customSize": true,
       "depth": 1,
       "height": 30,
       "layer": "",
       "name": "BOX_CERVEAU",
-      "persistentUuid": "8e816653-bc17-4775-bbe6-f7e45790d74e",
+      "persistentUuid": "b872549f-788d-4fcf-a712-fa6fd53b726b",
       "width": 500,
-      "x": 341,
-      "y": 473,
+      "x": 368,
+      "y": 460,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -60,13 +44,29 @@
       "angle": 332,
       "customSize": true,
       "depth": 1,
-      "height": 30,
+      "height": 25,
       "layer": "",
       "name": "BOX_CERVEAU",
-      "persistentUuid": "6a142fc8-249f-41c9-9414-8f7cb6bd171a",
-      "width": 500,
-      "x": 191,
-      "y": 191,
+      "persistentUuid": "dba92a06-1c0c-4ea0-a0ed-d7eedf591094",
+      "width": 426,
+      "x": 177,
+      "y": 278,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 43,
+      "customSize": true,
+      "depth": 1,
+      "height": 25,
+      "layer": "",
+      "name": "BOX_CERVEAU",
+      "persistentUuid": "bb7666af-f7c6-49d3-b6b7-5844446446c0",
+      "width": 421,
+      "x": 382,
+      "y": 281,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -76,29 +76,13 @@
       "angle": 59,
       "customSize": true,
       "depth": 1,
-      "height": 30,
+      "height": 27,
       "layer": "",
       "name": "BOX_CERVEAU",
-      "persistentUuid": "9dae9a12-5278-428e-9da9-cc9ff0c6a9d3",
-      "width": 500,
-      "x": 468,
-      "y": 220,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 59,
-      "customSize": true,
-      "depth": 1,
-      "height": 30,
-      "layer": "",
-      "name": "BOX_CERVEAU",
-      "persistentUuid": "5c5e5978-5528-4546-a59b-602d82f6bd32",
-      "width": 500,
-      "x": 69,
-      "y": 433,
+      "persistentUuid": "6ae36237-2964-4ead-94cb-29313815eca9",
+      "width": 456,
+      "x": 105,
+      "y": 490,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -106,14 +90,15 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 48,
       "layer": "",
       "name": "EmptyCharaSpawn",
-      "persistentUuid": "9b7733c8-a11f-4606-a70c-19be8e9a81f3",
-      "width": 0,
-      "x": 947,
-      "y": 90,
+      "persistentUuid": "4f2e2956-7d49-4e6e-9edd-b56c5687fbc8",
+      "width": 48,
+      "x": 1501,
+      "y": 168,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -125,10 +110,10 @@
       "height": 0,
       "layer": "",
       "name": "EmptyTextSpawn",
-      "persistentUuid": "0bc95da4-a886-4e28-8eb4-6ae01a0bc922",
+      "persistentUuid": "b019a9a9-47b1-4108-a7c8-57bbff14a91d",
       "width": 0,
-      "x": 1108,
-      "y": 329,
+      "x": 1163,
+      "y": 273,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -140,10 +125,10 @@
       "height": 0,
       "layer": "",
       "name": "Answer",
-      "persistentUuid": "78924b59-a67f-4b9e-9de0-2d32ec604e8b",
+      "persistentUuid": "737d933f-4968-49a0-b4ed-d566dc84a185",
       "width": 0,
-      "x": 1051,
-      "y": 842,
+      "x": 754,
+      "y": 840,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -155,10 +140,10 @@
       "height": 0,
       "layer": "",
       "name": "MentalScoreDev",
-      "persistentUuid": "f42e96c0-3961-4c87-9e5e-3f263a2b0be1",
+      "persistentUuid": "b0ff30e4-7714-4515-9946-d0015efefef8",
       "width": 0,
-      "x": 815,
-      "y": 1019,
+      "x": 807,
+      "y": 1016,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -170,11 +155,59 @@
       "height": 0,
       "layer": "",
       "name": "EmptyTextAnswerSpawn",
-      "persistentUuid": "9f5b6e68-0867-461d-971b-5b2f55b90dc8",
+      "persistentUuid": "d798790d-2dab-4914-bb08-222b8dc82edb",
       "width": 0,
-      "x": 1112,
-      "y": 697,
+      "x": 741,
+      "y": 652,
       "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 863,
+      "layer": "",
+      "name": "Perso1Line",
+      "persistentUuid": "12c82522-e5e7-4547-9ce8-764a0cbda795",
+      "width": 656,
+      "x": 90,
+      "y": 160,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 107,
+      "layer": "",
+      "name": "Perso1Details",
+      "persistentUuid": "a7d3b99b-901d-4525-a7f2-a829a8cbc2cf",
+      "width": 171,
+      "x": 524,
+      "y": 579,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 757,
+      "layer": "",
+      "name": "Perso1color",
+      "persistentUuid": "b89120cc-036d-47f5-9bec-8bc135ff459c",
+      "width": 594,
+      "x": 45,
+      "y": 259,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -182,7 +215,7 @@
   ],
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "BrainPerson",
       "tags": "",
@@ -203,7 +236,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "Perso1Line2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -219,20 +252,32 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
+                        "x": 253,
+                        "y": 582.5
+                      },
+                      {
+                        "x": 62,
+                        "y": 161
+                      },
+                      {
+                        "x": 234,
                         "y": 0
                       },
                       {
-                        "x": 533,
-                        "y": 0
+                        "x": 517,
+                        "y": 58
                       },
                       {
-                        "x": 533,
-                        "y": 487
+                        "x": 704.5,
+                        "y": 273
                       },
                       {
-                        "x": 0,
-                        "y": 487
+                        "x": 715.5,
+                        "y": 505.5
+                      },
+                      {
+                        "x": 596.5,
+                        "y": 686.5
                       }
                     ]
                   ]
@@ -265,7 +310,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Person1",
+                  "image": "assets\\Person2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -281,20 +326,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
+                        "x": 1,
                         "y": 0
                       },
                       {
-                        "x": 492,
+                        "x": 294,
                         "y": 0
                       },
                       {
-                        "x": 492,
-                        "y": 704
+                        "x": 294,
+                        "y": 786
                       },
                       {
-                        "x": 0,
-                        "y": 704
+                        "x": 1,
+                        "y": 786
                       }
                     ]
                   ]
@@ -411,20 +456,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 24,
+                        "y": 17
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 48,
+                        "y": 17
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 48,
+                        "y": 36
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 24,
+                        "y": 36
                       }
                     ]
                   ]
@@ -659,6 +704,293 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "CircleOfEmo",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Dynamic",
+          "bullet": false,
+          "fixedRotation": false,
+          "canSleep": true,
+          "shape": "Circle",
+          "shapeDimensionA": 230,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 0.2,
+          "friction": 0.3,
+          "restitution": 0.3,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 0.5,
+          "layers": 1,
+          "masks": 1
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\New image.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 498,
+                        "y": 1
+                      },
+                      {
+                        "x": 498,
+                        "y": 498
+                      },
+                      {
+                        "x": 1,
+                        "y": 498
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Perso1Line",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Perso1Line3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Perso1Line3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 601.5,
+                        "y": 695.5
+                      },
+                      {
+                        "x": 279.5,
+                        "y": 583.5
+                      },
+                      {
+                        "x": 161.5,
+                        "y": 411.5
+                      },
+                      {
+                        "x": 82,
+                        "y": 141
+                      },
+                      {
+                        "x": 241.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 553.5,
+                        "y": 79.5
+                      },
+                      {
+                        "x": 673,
+                        "y": 255.5
+                      },
+                      {
+                        "x": 702,
+                        "y": 503
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Perso1Details",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Perso1détail",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Perso1détail.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 186,
+                        "y": 1
+                      },
+                      {
+                        "x": 186,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Perso1color",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Perso1color",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Perso1color.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 2
+                      },
+                      {
+                        "x": 648,
+                        "y": 2
+                      },
+                      {
+                        "x": 648,
+                        "y": 825
+                      },
+                      {
+                        "x": 6,
+                        "y": 825
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -969,14 +1301,12 @@
         },
         {
           "type": {
-            "value": "CollisionNP"
+            "value": "CollisionPoint"
           },
           "parameters": [
-            "TextHolder",
-            "BrainPerson",
-            "",
-            "",
-            ""
+            "Perso1Line",
+            "CursorX()",
+            "CursorY()"
           ]
         }
       ],
@@ -1168,7 +1498,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Text drag",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1198,8 +1527,8 @@
                 "TextHolder",
                 "EmptyTextSpawn.X()",
                 "EmptyTextSpawn.Y()",
-                "20",
-                "1"
+                "800",
+                "0"
               ]
             }
           ]

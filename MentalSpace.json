@@ -285,6 +285,33 @@
         "name": "line",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\New image.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Person2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Person2.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -308,6 +335,132 @@
       "name": "DialogueStatus",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "Variable",
+      "type": "array",
+      "children": [
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "type": "boolean",
+          "value": false
+        }
+      ]
     }
   ],
   "layouts": [
