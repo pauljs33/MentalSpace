@@ -18,14 +18,14 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5427920802473278,
+    "zoomFactor": 0.330056004916593,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
     {
-      "angle": 323,
+      "angle": 328,
       "customSize": true,
       "depth": 1,
       "height": 30,
@@ -33,15 +33,15 @@
       "name": "BOX_CERVEAU",
       "persistentUuid": "b872549f-788d-4fcf-a712-fa6fd53b726b",
       "width": 500,
-      "x": 368,
-      "y": 460,
+      "x": 334,
+      "y": 488,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 332,
+      "angle": 325,
       "customSize": true,
       "depth": 1,
       "height": 25,
@@ -49,8 +49,8 @@
       "name": "BOX_CERVEAU",
       "persistentUuid": "dba92a06-1c0c-4ea0-a0ed-d7eedf591094",
       "width": 426,
-      "x": 177,
-      "y": 278,
+      "x": 167,
+      "y": 267,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -65,8 +65,8 @@
       "name": "BOX_CERVEAU",
       "persistentUuid": "bb7666af-f7c6-49d3-b6b7-5844446446c0",
       "width": 421,
-      "x": 382,
-      "y": 281,
+      "x": 394,
+      "y": 295,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -173,8 +173,8 @@
       "name": "Perso1Line",
       "persistentUuid": "12c82522-e5e7-4547-9ce8-764a0cbda795",
       "width": 656,
-      "x": 90,
-      "y": 160,
+      "x": 93,
+      "y": 172,
       "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
@@ -205,9 +205,24 @@
       "name": "Perso1color",
       "persistentUuid": "b89120cc-036d-47f5-9bec-8bc135ff459c",
       "width": 594,
-      "x": 45,
-      "y": 259,
+      "x": 55,
+      "y": 263,
       "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "EmptyBallSpawn",
+      "persistentUuid": "3fcdda4d-75c0-4974-995c-bb6045f92fcc",
+      "width": 0,
+      "x": 440,
+      "y": 364,
+      "zOrder": 101,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -439,7 +454,7 @@
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "NewSprite2",
                   "points": [],
                   "originPoint": {
@@ -456,20 +471,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 24,
-                        "y": 17
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 48,
-                        "y": 17
+                        "x": 64,
+                        "y": 0
                       },
                       {
-                        "x": 48,
-                        "y": 36
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 24,
-                        "y": 36
+                        "x": 0,
+                        "y": 64
                       }
                     ]
                   ]
@@ -594,6 +609,18 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "EmptyTextAnswerSpawn",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "EmptyBallSpawn",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -729,23 +756,24 @@
           "shapeOffsetY": 0,
           "polygonOrigin": "Center",
           "vertices": [],
-          "density": 0.2,
-          "friction": 0.3,
-          "restitution": 0.3,
+          "density": 0,
+          "friction": 0,
+          "restitution": 1,
           "linearDamping": 0.1,
           "angularDamping": 0.1,
-          "gravityScale": 0.5,
+          "gravityScale": -0.1,
           "layers": 1,
           "masks": 1
         }
       ],
       "animations": [
         {
-          "name": "",
+          "name": "assets\\New image",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -991,6 +1019,35 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "KeyWord",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "string": "Text",
+      "font": "mononoki-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 12,
+      "color": {
+        "b": 59,
+        "g": 59,
+        "r": 59
+      }
     }
   ],
   "events": [
@@ -1017,6 +1074,3189 @@
             "yes",
             "50",
             "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DraggableBehavior::Dropped"
+          },
+          "parameters": [
+            "TextHolder",
+            "Déplaçable"
+          ]
+        },
+        {
+          "type": {
+            "value": "CollisionPoint"
+          },
+          "parameters": [
+            "Perso1Line",
+            "CursorX()",
+            "CursorY()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "TextHolder",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[0]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(200,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Immigration\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[1]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";130;130\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "-25",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Immigration\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[2]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.30"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.30"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "-15",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Cherry\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[3]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.20"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.20"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[4]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[5]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[6]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "7"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[7]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[8]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "9"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[9]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "10"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "11"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "12"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "13"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "14"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "15"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "16"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "17"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "18"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "19"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "20"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "21"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "22"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "23"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "24"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "MentalScoreDev",
+                "=",
+                "\"MentalScore (Debug) : \"+ToString(GlobalVariable(MentalHealth))"
+              ]
+            }
           ]
         }
       ]
@@ -1112,158 +4352,6 @@
               "parameters": [
                 "DialogueCount",
                 "=",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "BallEmotion",
-                "500",
-                "200",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Person1",
-                "EmptyCharaSpawn.X()",
-                "EmptyCharaSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextHolder",
-                "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextAnswerHolder",
-                "=",
-                "\"I will send you the money. Best.\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "+",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "MentalHealth",
-                "<",
-                "30"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "BallEmotion",
-                "500",
-                "200",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Person1",
-                "EmptyCharaSpawn.X()",
-                "EmptyCharaSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextHolder",
-                "=",
-                "\"[b]Boyfriend:[/b] Hey darl', I'm late I won't be able to pick [shadow=red]Cherry[/shadow] from school can you do it? Lov u\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextAnswerHolder",
-                "=",
-                "\"Hi Steve, yeah nw, luv u\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "+",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
                 "0"
               ]
             }
@@ -1300,80 +4388,54 @@
                 "=",
                 "\"For fuck sake always the same shit. [Turn of the tv]\""
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Person1",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
             },
             {
               "type": {
-                "value": "ModVarGlobal"
+                "value": "BBText::SetBBText"
               },
               "parameters": [
-                "DialogueCount",
-                "+",
-                "1"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "folded": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DraggableBehavior::Dropped"
-          },
-          "parameters": [
-            "TextHolder",
-            "Déplaçable"
-          ]
-        },
-        {
-          "type": {
-            "value": "CollisionPoint"
-          },
-          "parameters": [
-            "Perso1Line",
-            "CursorX()",
-            "CursorY()"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "TextHolder",
-            ""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
+                "TextHolder",
                 "=",
-                "1"
+                "\"[b]Boyfriend:[/b] Hey darl', I'm late I won't be able to pick [shadow=red]Cherry[/shadow] from school can you do it? Lov u\""
               ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
-                "value": "ModVarGlobal"
+                "value": "BBText::SetBBText"
               },
               "parameters": [
-                "MentalHealth",
-                "+",
-                "5"
+                "TextAnswerHolder",
+                "=",
+                "\"Hi Steve, yeah nw, luv u\""
               ]
             }
           ]
@@ -1388,19 +4450,41 @@
               "parameters": [
                 "DialogueCount",
                 "=",
-                "0"
+                "2"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ModVarGlobal"
+                "value": "Create"
               },
               "parameters": [
-                "MentalHealth",
-                "+",
-                "5"
+                "",
+                "Person1",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I will send you the money. Best.\""
               ]
             }
           ]
@@ -1411,12 +4495,12 @@
           "actions": [
             {
               "type": {
-                "value": "TextObject::String"
+                "value": "ModVarGlobal"
               },
               "parameters": [
-                "MentalScoreDev",
-                "=",
-                "\"MentalScore (Debug) : \"+ToString(GlobalVariable(MentalHealth))"
+                "DialogueCount",
+                "+",
+                "1"
               ]
             }
           ]
@@ -1456,6 +4540,24 @@
             "",
             "\"DialogueCharaTimer\""
           ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "Answer",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Answer"
+          ]
         }
       ]
     },
@@ -1470,7 +4572,7 @@
             "",
             "\"DialogueCharaTimer\"",
             ">=",
-            "4"
+            "2"
           ]
         }
       ],
@@ -1518,6 +4620,25 @@
           "parameters": [
             "",
             "\"DialogueCharaTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Answer",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "Answer",
+            "yes",
+            ""
           ]
         }
       ]
@@ -1702,6 +4823,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
     }
   ]
 }

@@ -299,7 +299,7 @@
         "alwaysLoaded": false,
         "file": "assets/New image.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/New image.png\",\"extension\":\".png\"}",
         "name": "assets\\New image.png",
         "smoothed": true,
         "userAdded": true
@@ -357,6 +357,7 @@
       "value": false
     },
     {
+      "folded": true,
       "name": "Variable",
       "type": "array",
       "children": [
@@ -495,6 +496,14 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sticker"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/linktools"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
