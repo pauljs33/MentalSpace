@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4448515998886656,
+    "zoomFactor": 0.5610952083582077,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -789,13 +789,13 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\New image.png",
+                  "image": "assets\\New image5",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -811,20 +811,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 1
+                        "x": 2,
+                        "y": 9
                       },
                       {
-                        "x": 498,
-                        "y": 1
+                        "x": 494,
+                        "y": 9
                       },
                       {
-                        "x": 498,
-                        "y": 498
+                        "x": 494,
+                        "y": 497
                       },
                       {
-                        "x": 1,
-                        "y": 498
+                        "x": 2,
+                        "y": 497
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\New image6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 9
+                      },
+                      {
+                        "x": 494,
+                        "y": 9
+                      },
+                      {
+                        "x": 494,
+                        "y": 497
+                      },
+                      {
+                        "x": 2,
+                        "y": 497
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\New image7",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 9
+                      },
+                      {
+                        "x": 494,
+                        "y": 9
+                      },
+                      {
+                        "x": 494,
+                        "y": 497
+                      },
+                      {
+                        "x": 2,
+                        "y": 497
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\New image8",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 9
+                      },
+                      {
+                        "x": 494,
+                        "y": 9
+                      },
+                      {
+                        "x": 494,
+                        "y": 497
+                      },
+                      {
+                        "x": 2,
+                        "y": 497
                       }
                     ]
                   ]
@@ -1582,7 +1690,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
