@@ -636,6 +636,24 @@
         "name": "square5.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "square6.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"square6.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "square6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "square7.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"square7.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "square7.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -800,6 +818,52 @@
           ]
         }
       ]
+    },
+    {
+      "additive": false,
+      "assetStoreId": "",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 300,
+      "emitterForceMin": 200,
+      "flow": -1,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 7,
+      "name": "PopBubble",
+      "particleAlpha1": 200,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 51,
+      "particleBlue2": 0,
+      "particleGravityX": 0,
+      "particleGravityY": 500,
+      "particleGreen1": 51,
+      "particleGreen2": 0,
+      "particleLifeTimeMax": 0.6,
+      "particleLifeTimeMin": 0.4,
+      "particleRed1": 255,
+      "particleRed2": 255,
+      "particleSize1": 100,
+      "particleSize2": 0,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 20,
+      "rendererParam2": 12,
+      "rendererType": "Line",
+      "tags": "",
+      "tank": 0,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 2,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsGroups": [],

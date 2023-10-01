@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4163025217733338,
+    "zoomFactor": 0.4753585087126945,
     "windowMask": false
   },
   "objectsGroups": [
@@ -191,7 +191,7 @@
       "name": "EmptyTextAnswerSpawn",
       "persistentUuid": "d798790d-2dab-4914-bb08-222b8dc82edb",
       "width": 0,
-      "x": 825,
+      "x": 901,
       "y": 679,
       "zOrder": 12,
       "numberProperties": [],
@@ -1808,6 +1808,23 @@
       "height": 32,
       "leftMargin": 0,
       "name": "BulleChara",
+      "rightMargin": 0,
+      "tags": "",
+      "texture": "square7.png",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "BulleChara2",
       "rightMargin": 0,
       "tags": "",
       "texture": "square5.png",
@@ -7169,9 +7186,20 @@
           "parameters": [
             "",
             "BulleChara",
-            "EmptyTextSpawn.X()",
-            "EmptyTextSpawn.Y()",
+            "790",
+            "120",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "BulleChara",
+            "Resizable",
+            "600",
+            "220\n\n"
           ]
         },
         {
@@ -7198,6 +7226,29 @@
         },
         {
           "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "BulleChara2",
+            "790",
+            "600",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "BulleChara2",
+            "Resizable",
+            "600",
+            "200\n"
+          ]
+        },
+        {
+          "type": {
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
@@ -7214,7 +7265,7 @@
           "parameters": [
             "TextAnswerHolder",
             "=",
-            "500"
+            "480"
           ]
         }
       ],
