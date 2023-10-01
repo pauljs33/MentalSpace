@@ -4755,6 +4755,27 @@
             "top": "Y-"
           },
           "booleanParameters": {}
+        },
+        {
+          "effectType": "CRT",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 60,
+            "animationSpeed": 1,
+            "curvature": 1,
+            "lineContrast": 0.25,
+            "lineWidth": 1,
+            "noise": 0.3,
+            "noiseSize": 1,
+            "padding": 0,
+            "vignetting": 0.3,
+            "vignettingAlpha": 1,
+            "vignettingBlur": 0.3
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "verticalLine": false
+          }
         }
       ]
     },
