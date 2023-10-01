@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.44485159988866624,
+    "zoomFactor": 0.4163025217733338,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1849,6 +1849,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1883,140 +1884,6 @@
         }
       ],
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "CircleOfEmo",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "MentalHealth",
-                "+",
-                "5"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetGlobalVariableAsBoolean"
-              },
-              "parameters": [
-                "Variable[0]",
-                "True"
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Scale",
-                "=",
-                "0.01"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::ShapeScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "0.01\n"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::GravityScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "RandomFloatInRange(-0.15,0.15)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "ToString(RandomInRange(230,255))+\";100;100\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "KeyWord",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreAutour"
-              },
-              "parameters": [
-                "KeyWord",
-                "CircleOfEmo",
-                "0",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Sticker::Sticker::Stick"
-              },
-              "parameters": [
-                "KeyWord",
-                "Sticker",
-                "CircleOfEmo",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "\"Immigration\""
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2102,7 +1969,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(255,255))+\";100;0\""
+                "ToString(RandomInRange(255,255))+\";\"+ToString(RandomInRange(255,255))+\";0\""
               ]
             },
             {
@@ -2146,17 +2013,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Immigration\""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "10"
+                "\"Computer\""
               ]
             }
           ]
@@ -2290,7 +2147,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Cherry\""
+                "\"Socks\""
               ]
             }
           ]
@@ -2424,7 +2281,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Cherry\""
+                "\"Retirement\""
               ]
             }
           ]
@@ -2531,6 +2388,16 @@
             },
             {
               "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
                 "value": "MettreAutour"
               },
               "parameters": [
@@ -2549,6 +2416,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Shop\""
               ]
             }
           ]
@@ -2666,6 +2543,16 @@
             },
             {
               "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
                 "value": "Sticker::Sticker::Stick"
               },
               "parameters": [
@@ -2673,6 +2560,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Together\""
               ]
             }
           ]
@@ -2790,6 +2687,16 @@
             },
             {
               "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
                 "value": "Sticker::Sticker::Stick"
               },
               "parameters": [
@@ -2797,6 +2704,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"appointment\""
               ]
             }
           ]
@@ -2922,6 +2839,16 @@
                 "CircleOfEmo",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Ghost\""
+              ]
             }
           ]
         },
@@ -3045,6 +2972,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Bird\""
               ]
             }
           ]
@@ -3170,6 +3107,16 @@
                 "CircleOfEmo",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Rent\""
+              ]
             }
           ]
         },
@@ -3294,6 +3241,131 @@
                 "CircleOfEmo",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Intern\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "10"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Report\""
+              ]
             }
           ]
         },
@@ -3339,7 +3411,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[11]",
                 "True"
               ]
             },
@@ -3417,6 +3489,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Laundry\""
               ]
             }
           ]
@@ -3463,7 +3545,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[12]",
                 "True"
               ]
             },
@@ -3541,6 +3623,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"TV\""
               ]
             }
           ]
@@ -3587,7 +3679,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[13]",
                 "True"
               ]
             },
@@ -3665,6 +3757,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Slap\""
               ]
             }
           ]
@@ -3711,7 +3813,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[14]",
                 "True"
               ]
             },
@@ -3789,6 +3891,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"School\""
               ]
             }
           ]
@@ -3835,7 +3947,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[15]",
                 "True"
               ]
             },
@@ -3913,6 +4025,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Money\""
               ]
             }
           ]
@@ -3959,7 +4081,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[16]",
                 "True"
               ]
             },
@@ -4037,6 +4159,131 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Report\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "16"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Contract\""
               ]
             }
           ]
@@ -4083,7 +4330,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[17]",
                 "True"
               ]
             },
@@ -4161,6 +4408,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Mother\""
               ]
             }
           ]
@@ -4207,7 +4464,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[18]",
                 "True"
               ]
             },
@@ -4285,6 +4542,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Drawing\""
               ]
             }
           ]
@@ -4331,7 +4598,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[19]",
                 "True"
               ]
             },
@@ -4409,6 +4676,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Immigration\""
               ]
             }
           ]
@@ -4455,7 +4732,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[20]",
                 "True"
               ]
             },
@@ -4533,6 +4810,131 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Last call\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "20"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Payment\""
               ]
             }
           ]
@@ -4579,7 +4981,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[21]",
                 "True"
               ]
             },
@@ -4657,6 +5059,131 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Cherry\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "21"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Crazy\""
               ]
             }
           ]
@@ -4703,7 +5230,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[22]",
                 "True"
               ]
             },
@@ -4781,6 +5308,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Help\""
               ]
             }
           ]
@@ -4827,7 +5364,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[23]",
                 "True"
               ]
             },
@@ -4905,6 +5442,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Ungrateful\""
               ]
             }
           ]
@@ -4951,7 +5498,7 @@
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "Variable[10]",
+                "Variable[24]",
                 "True"
               ]
             },
@@ -5011,6 +5558,16 @@
             },
             {
               "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
                 "value": "MettreAutour"
               },
               "parameters": [
@@ -5029,6 +5586,1524 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Sister\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "25"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[25]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"War\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "26"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[26]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Sister\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "27"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[27]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Sorry\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "27"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Apart\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "27"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Forgot\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "28"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[28]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Can't\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "28"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Forgot\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "28"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Stop\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "29"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[29]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Health\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "30"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[30]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Authorities\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "31"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                "+",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[31]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "ToString(RandomInRange(150,250))+\";160;160\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Mommy\""
               ]
             }
           ]
@@ -5164,7 +7239,7 @@
               },
               "parameters": [
                 "",
-                "Boss",
+                "Dad",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5177,7 +7252,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]TV :[/b] [buzzing word] IMMIGRATION IMMIGRATION [shadow=red]IMMIGRATION[/shadow] IMMIGRATION [buzzing word]\""
+                "\"[b]Dad:[/b] Darling, I’ve got a problem with my [shadow=red][b]computer[/b][/shadow]. Could you pass by and check it?\""
               ]
             },
             {
@@ -5187,7 +7262,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"For fuck sake always the same shit. [Turn of the tv]\""
+                "\"Did you try turning it on and off?\""
               ]
             }
           ]
@@ -5213,7 +7288,7 @@
               },
               "parameters": [
                 "",
-                "Doctor",
+                "Boyfriend",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5226,7 +7301,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Boyfriend:[/b] Hey darl', I'm late I won't be able to pick [shadow=red]Cherry[/shadow] from school can you do it? Lov u\""
+                "\"[b]Boyfriend:[/b] Hey, do you know where is my blue [shadow=red][b]socks[/b][/shadow]?\""
               ]
             },
             {
@@ -5236,7 +7311,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"Hi Steve, yeah nw, luv u\""
+                "\"Are you sure you looked in the third drawer by the bed?\""
               ]
             }
           ]
@@ -5262,7 +7337,7 @@
               },
               "parameters": [
                 "",
-                "Daughter",
+                "TV",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5275,7 +7350,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]TV:[/b] [i][bzzz][/i] The current prime minister has announced a new measure [i][…][/i] the [shadow=red][b]retirement[/b][/shadow] age NEED to be delayed… [i][bzzz][/i]\""
               ]
             },
             {
@@ -5285,7 +7360,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
+                "\"Sigh... there all the sames\""
               ]
             }
           ]
@@ -5311,7 +7386,7 @@
               },
               "parameters": [
                 "",
-                "Landlord",
+                "Boss",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5324,7 +7399,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]Boss:[/b] Hey sweetie, I will need you to stay late tomorrow. I have to go early. I trust you to close the [shadow=red][b]shop[/b][/shadow]\""
               ]
             },
             {
@@ -5334,7 +7409,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
+                "\"No problem boss!\""
               ]
             }
           ]
@@ -5360,7 +7435,7 @@
               },
               "parameters": [
                 "",
-                "Dad",
+                "Boyfriend",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5373,7 +7448,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]Boyfriend:[/b] Hello, I sent Cherry to my mom tonight. Let’s have fun and spend time [shadow=red][b]together[/b][/shadow] tonight.\""
               ]
             },
             {
@@ -5383,7 +7458,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
+                "\"You're so sweet! Sushi?\""
               ]
             }
           ]
@@ -5409,7 +7484,7 @@
               },
               "parameters": [
                 "",
-                "Sister",
+                "Doctor",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5422,7 +7497,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]Doctor:[/b] Hello, your test results arrived today. You will need to book an [shadow=red][b]appointment[/b][/shadow] so we can discuss it and talk about the next steps.\n\""
               ]
             },
             {
@@ -5432,7 +7507,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
+                "\"Is there a way you have a spot before the next month? I'll take anything.\""
               ]
             }
           ]
@@ -5458,7 +7533,7 @@
               },
               "parameters": [
                 "",
-                "TV",
+                "Daughter",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5471,7 +7546,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]Daughter:[/b] Mommy, there is a [shadow=red][b]ghost[/b][/shadow] in my room. Could you sleep with me?\""
               ]
             },
             {
@@ -5481,7 +7556,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
+                "\"Come here honey, it's hug time\""
               ]
             }
           ]
@@ -5507,7 +7582,7 @@
               },
               "parameters": [
                 "",
-                "Parents",
+                "TV",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5520,7 +7595,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]TV:[/b] [i][bzzz][/i] This [shadow=red][b]bird[/b][/shadow] is able to sleep effortlessly, in the sky for hours. [i][bzzz][/i]\""
               ]
             },
             {
@@ -5530,7 +7605,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
+                "\"Oh, I wish I could do the same\""
               ]
             }
           ]
@@ -5556,7 +7631,7 @@
               },
               "parameters": [
                 "",
-                "Boyfriend",
+                "Landlord",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5569,7 +7644,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]Landlord:[/b] Dear Ms. H, I am contacting you due to your late payment. The [shadow=red][b]rent[/b][/shadow] is expected in the first week of the month, not after.\""
               ]
             },
             {
@@ -5579,7 +7654,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
+                "\"I'm sorry, I'll make the transfer as soon as I can\""
               ]
             }
           ]
@@ -5618,7 +7693,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]Boss:[/b] Hello sweetie, I’ve recruited an [shadow=red][b]intern[/b][/shadow]. I need you to take care of her and show her our ways. Oh, also when will you deliver your [shadow=red][b]report[/b][/shadow]?\n\""
               ]
             },
             {
@@ -5628,154 +7703,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "+",
-                "1"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "GlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "DialogueStatus",
-            "False"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetGlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "DialogueStatus",
-            "True"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "TextHolder",
-            "EmptyTextSpawn.X()",
-            "EmptyTextSpawn.Y()",
-            "\"Calque Texte\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BBText::SetWrappingWidth"
-          },
-          "parameters": [
-            "TextHolder",
-            "=",
-            "500"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "TextAnswerHolder",
-            "EmptyTextAnswerSpawn.X()",
-            "EmptyTextAnswerSpawn.Y()",
-            "\"Calque Texte\""
-          ]
-        },
-        {
-          "type": {
-            "value": "OpacityCapability::OpacityBehavior::SetValue"
-          },
-          "parameters": [
-            "TextAnswerHolder",
-            "Opacity",
-            "=",
-            "150"
-          ]
-        },
-        {
-          "type": {
-            "value": "BBText::SetWrappingWidth"
-          },
-          "parameters": [
-            "TextAnswerHolder",
-            "=",
-            "500"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Boss",
-                "EmptyCharaSpawn.X()",
-                "EmptyCharaSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextHolder",
-                "=",
-                "\"[b]TV :[/b] [buzzing word] IMMIGRATION IMMIGRATION [shadow=red]IMMIGRATION[/shadow] IMMIGRATION [buzzing word]\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextAnswerHolder",
-                "=",
-                "\"For fuck sake always the same shit. [Turn of the tv]\""
+                "\"An intern? Is she supposed to replace Matt? No problem, it will be complex but I will find the time.\""
               ]
             }
           ]
@@ -5790,7 +7718,7 @@
               "parameters": [
                 "DialogueCount",
                 "=",
-                "1"
+                "10"
               ]
             }
           ],
@@ -5801,7 +7729,7 @@
               },
               "parameters": [
                 "",
-                "Doctor",
+                "Boyfriend",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5814,7 +7742,154 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Boyfriend:[/b] Hey darl', I'm late I won't be able to pick [shadow=red]Cherry[/shadow] from school can you do it? Lov u\""
+                "\"[b]Boyfriend:[/b] Hey, just to give you a heads up, I didn’t have time to do the [shadow=red][b]laundry[/b][/shadow], could you do it? I have to meet with Mike tomorrow!\n\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"Cherry just stained her last clean shirt... I'll take care of that and I will do your stuff after\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "11"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Dad",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Dad:[/b] Hello Eva, there is a problem with the [shadow=red][b]TV[/b][/shadow]. It is stuck on the news channel. Could you come and fix it?\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"Yes dad, I will try to pass by.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "12"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "TV",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]TV:[/b] [i][bzzz][Christina [shadow=red][b]Slap[/b][/shadow] Trinity][/i] I HATE YOU! You kiss my BOYFRIEND [i][bzzz][/i]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"haha, trinity looked for it\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "13"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Boyfriend",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Boyfriend:[/b] Hey darl’, I’m late. I won’t be able to pick Cherry from [shadow=red][b]school[/b][/shadow]. Can you do it? Lov u <3\""
               ]
             },
             {
@@ -5839,154 +7914,7 @@
               "parameters": [
                 "DialogueCount",
                 "=",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Daughter",
-                "EmptyCharaSpawn.X()",
-                "EmptyCharaSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextHolder",
-                "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextAnswerHolder",
-                "=",
-                "\"I will send you the money. Best.\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "3"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Landlord",
-                "EmptyCharaSpawn.X()",
-                "EmptyCharaSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextHolder",
-                "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextAnswerHolder",
-                "=",
-                "\"I will send you the money. Best.\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Dad",
-                "EmptyCharaSpawn.X()",
-                "EmptyCharaSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextHolder",
-                "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextAnswerHolder",
-                "=",
-                "\"I will send you the money. Best.\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "5"
+                "14"
               ]
             }
           ],
@@ -6010,7 +7938,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]Sister:[/b] hey big sis, sorry to call you like that but could i borrow you just a tiny bit of [shadow=red][b]money[/b][/shadow], i’m in the red right now, and it sucks\""
               ]
             },
             {
@@ -6020,7 +7948,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
+                "\"How many do you need? I'll check what I can spare. Don't worry I am here for you. Come see Cherry!\""
               ]
             }
           ]
@@ -6035,154 +7963,7 @@
               "parameters": [
                 "DialogueCount",
                 "=",
-                "6"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "TV",
-                "EmptyCharaSpawn.X()",
-                "EmptyCharaSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextHolder",
-                "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextAnswerHolder",
-                "=",
-                "\"I will send you the money. Best.\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "7"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Parents",
-                "EmptyCharaSpawn.X()",
-                "EmptyCharaSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextHolder",
-                "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextAnswerHolder",
-                "=",
-                "\"I will send you the money. Best.\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "8"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Boyfriend",
-                "EmptyCharaSpawn.X()",
-                "EmptyCharaSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextHolder",
-                "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "TextAnswerHolder",
-                "=",
-                "\"I will send you the money. Best.\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "9"
+                "15"
               ]
             }
           ],
@@ -6206,7 +7987,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+                "\"[b]Boss:[/b] Hello sweetie, I still did not get your [shadow=red][b]report[/b][/shadow]. There is a huge [shadow=red][b]contract[/b][/shadow] on the line can you give it to me tomorrow, first hour?\""
               ]
             },
             {
@@ -6216,7 +7997,742 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"I will send you the money. Best.\""
+                "\"I just need a couple hours to finish it.\nI'll work on it tonight!\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "16"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Dad",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Dad:[/b] Darling, would you like to come dine with us? Your [shadow=red][b]mother[/b][/shadow] doesn’t see you enough.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"Maybe I can come by next week if I don't have late shifts.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "17"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Daughter",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Daughter:[/b] MOMMY, mommy look at my [shadow=red][b]drawing[/b][/shadow]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"Awww... And I guess this potato is the neighbour's dog?\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "18"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "TV",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]TV:[/b] [bzzz] IMMIGRATION [shadow=red][b]IMMIGRATION[/b][/shadow] IMMIGRATION [bzzz]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"[i]Turn off the TV[/i]\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "19"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Landlord",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Madam, this is your [shadow=red][b]last call[/b][/shadow], I need your [b]payment[/b].\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"My pay will arrive in just a few days. I will be so grateful if you can wait till Monday\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "20"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Boyfriend",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Boyfriend:[/b] WHAT THE FUCK Eva?! You didn’t pick up [shadow=red][b]Cherry[/b][/shadow] at school? ARE YOU [shadow=red][b]CRAZY[/b][/shadow]?!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"The boss asked me to finish this stupid report and I completely forgot the time! I'm sorry you had to cancel a beer with John. Don't you dare call me crazy\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "21"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Parents",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Mom:[/b] Hello, sweetie pie! It was great to have lunch with you yesterday! If you need any [shadow=red][b]help[/b][/shadow] with Cherry I can take care of her on Mondays\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"Thanks mom, I'll take you up on that offer. And thanks for everything, I already miss you, mommy\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "22"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Dad",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Dad:[/b] Hello darling, your mom is sad you didn’t come to dinner. She worked hard to make dinner for the whole family and you didn’t come. You are so [shadow=red][b]ungrateful[/b][/shadow]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I said I didn't know if I could come. Why didn't you wait for a confirmation before making big plans?!\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "23"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Sister",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Sister:[/b] sis, thank you for the money, i will reimburse you as soon i can! you are the best [shadow=red][b]sister[/b][/shadow]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"No you don't need to! See it has a sister gift! \""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "24"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "TV",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]TV:[/b] [i][bzzz][/i] The quadrillionaire Yvon Mosk is announcing creating their own country and goes to [shadow=red][b]war[/b][/shadow] with about everyone [i][bzzz][/i]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"[i]Switch channel[/i]\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "25"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Dad",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Dad:[/b] Hey, do you know where is your [shadow=red][b]sister[/b][/shadow]? She doesn’t answer her phone\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I'm sorry I have no idea, but she ask for money the other day and I totally forgot to send it to her... Call if there is any update\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "26"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Boyfriend",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Boyfriend:[/b] I am [shadow=red][b]sorry[/b][/shadow], but we can’t continue like this. I think we need some time [shadow=red][b]apart[/b][/shadow]. You [shadow=red][b]forgot[/b][/shadow] your daughter and when we talk about it, you don’t even care.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"Please let's talk about it! There is just... too much right now. I need you\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "27"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Boss",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Boss:[/b] Hello Eva, I’m sorry, but we [shadow=red][b]can’t[/b][/shadow] keep continuing like this. You didn’t think of closing the shop, [shadow=red][b]forgot[/b][/shadow] about the intern and never sent your report. I’m sorry, but I am afraid your contribution to this company will [shadow=red][b]stop[/b][/shadow] here.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"Please, just give me more time so I can prove to you that I can adjust! I'll do extra shifts!\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "28"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Doctor",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Doctor:[/b] Good morning Madam. Doctor Tebbs speaking. Since we can’t arrange an appointment soon, I advise you to see a specialist. Please check your [shadow=red][b]health[/b][/shadow] care plan before you see him.\n\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"No worries! Do you have any name for a good specialist?\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "29"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Landlord",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Madam. I contacted the [shadow=red][b]authorities[/b][/shadow], you will be pleased to vacate my apartment.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I beg you, please. I have a daughter. I have the money. I just sent it!\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "30"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Daughter",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Daughter:[/b] Are you okay [shadow=red][b]mommy[/b][/shadow]? Mommy?!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"Please, honey, Listen to me... I need you to call an ambulance\""
               ]
             }
           ]
