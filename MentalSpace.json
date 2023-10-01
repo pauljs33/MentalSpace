@@ -227,7 +227,7 @@
         "alwaysLoaded": false,
         "file": "assets/Perso1Line3.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Perso1Line3.png\"}",
         "name": "Perso1Line3",
         "smoothed": true,
         "userAdded": false
@@ -314,29 +314,171 @@
         "userAdded": true
       },
       {
-        "file": "in-the-silence-brock-hewitt-stories-in-sound-main-version-03-42-9707.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "in-the-silence-brock-hewitt-stories-in-sound-main-version-03-42-9707.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
+        "alwaysLoaded": false,
+        "file": "square.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"square.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "square.png",
+        "smoothed": true,
         "userAdded": true
       },
       {
-        "file": "requiem-sarah-spring-sonder-house-main-version-02-59-9991.mp3",
-        "kind": "audio",
+        "alwaysLoaded": false,
+        "file": "square2.png",
+        "kind": "image",
         "metadata": "",
-        "name": "requiem-sarah-spring-sonder-house-main-version-02-59-9991.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
+        "name": "square2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "square3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"square3.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "square3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Perso1Line5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Perso1Line5.png\",\"extension\":\".png\"}",
+        "name": "Perso1Line5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Perso1Line6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Perso1Line6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Perso1Line7.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Perso1Line7.png\",\"extension\":\".png\"}",
+        "name": "Perso1Line7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sister.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"sister.png\",\"extension\":\".png\"}",
+        "name": "sister.png",
+        "smoothed": true,
         "userAdded": true
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Perso1Line",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Perso1Line3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Perso1Line3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 755,
+                        "y": 1
+                      },
+                      {
+                        "x": 755,
+                        "y": 977
+                      },
+                      {
+                        "x": 1,
+                        "y": 977
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Perso1Line7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 755,
+                        "y": 1
+                      },
+                      {
+                        "x": 755,
+                        "y": 977
+                      },
+                      {
+                        "x": 1,
+                        "y": 977
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsGroups": [],
   "variables": [
     {

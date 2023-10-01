@@ -4262,7 +4262,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -4648,7 +4647,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Text drag",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
