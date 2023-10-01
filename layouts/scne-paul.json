@@ -18,39 +18,72 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5610952083582077,
+    "zoomFactor": 0.5800155239904875,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Character",
+      "objects": [
+        {
+          "name": "Boss"
+        },
+        {
+          "name": "Boyfriend"
+        },
+        {
+          "name": "Dad"
+        },
+        {
+          "name": "Parents"
+        },
+        {
+          "name": "Doctor"
+        },
+        {
+          "name": "Landlord"
+        },
+        {
+          "name": "Daughter"
+        },
+        {
+          "name": "TV"
+        },
+        {
+          "name": "Sister"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
-      "angle": 328,
+      "angle": 309,
       "customSize": true,
       "depth": 1,
-      "height": 30,
+      "height": 26,
       "layer": "",
       "name": "BOX_CERVEAU",
       "persistentUuid": "b872549f-788d-4fcf-a712-fa6fd53b726b",
-      "width": 500,
-      "x": 334,
-      "y": 488,
+      "width": 427,
+      "x": 204,
+      "y": 646,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 325,
+      "angle": 303,
       "customSize": true,
       "depth": 1,
-      "height": 25,
+      "height": 18,
       "layer": "",
       "name": "BOX_CERVEAU",
       "persistentUuid": "dba92a06-1c0c-4ea0-a0ed-d7eedf591094",
-      "width": 426,
-      "x": 167,
-      "y": 267,
+      "width": 313,
+      "x": 192,
+      "y": 317,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -81,8 +114,8 @@
       "name": "BOX_CERVEAU",
       "persistentUuid": "6ae36237-2964-4ead-94cb-29313815eca9",
       "width": 456,
-      "x": 105,
-      "y": 490,
+      "x": 124,
+      "y": 494,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -97,8 +130,8 @@
       "name": "EmptyCharaSpawn",
       "persistentUuid": "4f2e2956-7d49-4e6e-9edd-b56c5687fbc8",
       "width": 48,
-      "x": 1501,
-      "y": 168,
+      "x": 1414,
+      "y": 166,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -176,7 +209,7 @@
       "width": 656,
       "x": 96,
       "y": 158,
-      "zOrder": 100,
+      "zOrder": 103,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -232,14 +265,78 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1,
+      "height": 64,
       "layer": "",
-      "name": "TV",
-      "persistentUuid": "d427f3ce-00c0-4c12-83b4-a6671b301860",
-      "width": 1915,
-      "x": 5,
-      "y": 1074,
+      "name": "BackGroundFXValid",
+      "persistentUuid": "604c9fa5-5862-4a42-9c7e-ec1a480a18f8",
+      "width": 1930,
+      "x": -9,
+      "y": 1059,
       "zOrder": 102,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 348,
+      "customSize": true,
+      "depth": 1,
+      "height": 30,
+      "layer": "",
+      "name": "BOX_CERVEAU",
+      "persistentUuid": "56a44acd-fbe1-4602-bbb5-ee0f891f222e",
+      "width": 500,
+      "x": 221,
+      "y": 233,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 338,
+      "customSize": true,
+      "depth": 1,
+      "height": 26,
+      "layer": "",
+      "name": "BOX_CERVEAU",
+      "persistentUuid": "acd6ae8e-b575-4cef-9c0a-0b8dc93ce0f3",
+      "width": 427,
+      "x": 503,
+      "y": 417,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 358,
+      "customSize": true,
+      "depth": 1,
+      "height": 30,
+      "layer": "",
+      "name": "BOX_CERVEAU",
+      "persistentUuid": "5b0abef4-2c08-45d7-95e7-6500a6eafe90",
+      "width": 500,
+      "x": 214,
+      "y": 574,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 279,
+      "customSize": true,
+      "depth": 1,
+      "height": 30,
+      "layer": "",
+      "name": "BOX_CERVEAU",
+      "persistentUuid": "0a47da36-956e-4d35-a1d1-0dfad0d2682a",
+      "width": 500,
+      "x": 407,
+      "y": 442,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -310,68 +407,6 @@
                       {
                         "x": 596.5,
                         "y": 686.5
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Person1",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Person1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Person2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 0
-                      },
-                      {
-                        "x": 294,
-                        "y": 0
-                      },
-                      {
-                        "x": 294,
-                        "y": 786
-                      },
-                      {
-                        "x": 1,
-                        "y": 786
                       }
                     ]
                   ]
@@ -734,20 +769,32 @@
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "NewPanelSprite",
-      "rightMargin": 0,
+      "bold": true,
+      "italic": false,
+      "name": "KeyWord",
+      "smoothed": true,
       "tags": "",
-      "texture": "",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "string": "Text",
+      "font": "mononoki-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 12,
+      "color": {
+        "b": 59,
+        "g": 59,
+        "r": 59
+      }
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -936,6 +983,49 @@
                       }
                     ]
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BackGroundFXValid",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -1198,33 +1288,66 @@
       ]
     },
     {
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "KeyWord",
-      "smoothed": true,
+      "name": "Boss",
       "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
+      "behaviors": [],
+      "animations": [
         {
-          "name": "Sticker",
-          "type": "Sticker::Sticker",
-          "OnlyFollowPosition": false,
-          "IsDestroyedWithParent": true
+          "name": "Person1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Person2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 0
+                      },
+                      {
+                        "x": 294,
+                        "y": 0
+                      },
+                      {
+                        "x": 294,
+                        "y": 786
+                      },
+                      {
+                        "x": 1,
+                        "y": 786
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
-      ],
-      "string": "Text",
-      "font": "mononoki-Regular.ttf",
-      "textAlignment": "center",
-      "characterSize": 12,
-      "color": {
-        "b": 59,
-        "g": 59,
-        "r": 59
-      }
+      ]
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -1659,6 +1782,25 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewTileMap",
+      "tags": "",
+      "type": "TileMap::TileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "tilemapJsonFile": "",
+        "tilesetJsonFile": "",
+        "tilemapAtlasImage": "",
+        "displayMode": "visible",
+        "layerIndex": 0,
+        "levelIndex": 0,
+        "animationSpeedScale": 1,
+        "animationFps": 4
+      }
     }
   ],
   "events": [
@@ -4883,7 +5025,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -4984,7 +5125,7 @@
               },
               "parameters": [
                 "",
-                "Person1",
+                "Boss",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5033,7 +5174,7 @@
               },
               "parameters": [
                 "",
-                "Person1",
+                "Doctor",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5082,7 +5223,350 @@
               },
               "parameters": [
                 "",
-                "Person1",
+                "Daughter",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I will send you the money. Best.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Landlord",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I will send you the money. Best.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Dad",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I will send you the money. Best.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Sister",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I will send you the money. Best.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "TV",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I will send you the money. Best.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "7"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Parents",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I will send you the money. Best.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Boyfriend",
+                "EmptyCharaSpawn.X()",
+                "EmptyCharaSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextHolder",
+                "=",
+                "\"[b]Landlord:[/b] Dear Ms. H, I contact you due to your late [shadow=red]payment[/shadow], it should not happened again.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TextAnswerHolder",
+                "=",
+                "\"I will send you the money. Best.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "9"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Boss",
                 "EmptyCharaSpawn.X()",
                 "EmptyCharaSpawn.Y()",
                 ""
@@ -5179,6 +5663,16 @@
           "parameters": [
             "Answer"
           ]
+        },
+        {
+          "type": {
+            "value": "AutoTyping::BBText_AutoTyping::StartAtBeginning"
+          },
+          "parameters": [
+            "TextAnswerHolder",
+            "BBText_AutoTyping",
+            ""
+          ]
         }
       ]
     },
@@ -5212,7 +5706,7 @@
             "value": "Delete"
           },
           "parameters": [
-            "Person1",
+            "Character",
             ""
           ]
         },
