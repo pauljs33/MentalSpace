@@ -191,8 +191,8 @@
       "name": "EmptyTextAnswerSpawn",
       "persistentUuid": "d798790d-2dab-4914-bb08-222b8dc82edb",
       "width": 0,
-      "x": 901,
-      "y": 679,
+      "x": 908,
+      "y": 623,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -340,6 +340,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Calque Texte",
+      "name": "TextAnswerHolderAutotype",
+      "persistentUuid": "225c96c5-438c-4d63-915b-0e58681acc48",
+      "width": 0,
+      "x": 1067,
+      "y": 1121,
+      "zOrder": 104,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -452,6 +467,33 @@
       "behaviors": [],
       "content": {
         "text": "[shadow=red]Tout ce dont on a [shadow=blue]besoin[/shadow] , c'est l'amour.\nMais un peu de chocolat ne fait jamais de mal.[/shadow] ",
+        "opacity": 255,
+        "fontSize": 30,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "mononoki-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TextAnswerHolderAutotype",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BBText_AutoTyping",
+          "type": "AutoTyping::BBText_AutoTyping",
+          "Interval": 0.02,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "content": {
+        "text": ".",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
@@ -846,8 +888,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 250,
+                    "y": 250
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -882,8 +924,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 250,
+                    "y": 250
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -918,8 +960,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 250,
+                    "y": 250
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -954,8 +996,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 250,
+                    "y": 250
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1839,6 +1881,7 @@
   ],
   "events": [
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1857,7 +1900,7 @@
           },
           "parameters": [
             "",
-            "requiem-sarah-spring-sonder-house-main-version-02-59-9991.mp3",
+            "requiem-sarah-spring-sonder-house-main-version-02-59-9990.mp3",
             "yes",
             "50",
             "1"
@@ -1898,6 +1941,15 @@
             "TextHolder",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "BulleChara",
+            ""
+          ]
         }
       ],
       "events": [
@@ -1935,7 +1987,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "15"
               ]
             },
             {
@@ -1955,7 +2007,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.10"
+                "0.15"
               ]
             },
             {
@@ -1966,7 +2018,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.10"
+                "0.15"
               ]
             },
             {
@@ -2069,7 +2121,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "10"
               ]
             },
             {
@@ -2089,7 +2141,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.30"
+                "0.10"
               ]
             },
             {
@@ -2100,7 +2152,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.30"
+                "0.10"
               ]
             },
             {
@@ -2120,7 +2172,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(255,255))+\";100;0\""
+                "ToString(RandomInRange(255,255))+\";\"+ToString(RandomInRange(255,255))+\";0\""
               ]
             },
             {
@@ -2203,7 +2255,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "17"
               ]
             },
             {
@@ -2223,7 +2275,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.20"
+                "0.17"
               ]
             },
             {
@@ -2234,7 +2286,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.20"
+                "0.17"
               ]
             },
             {
@@ -2254,7 +2306,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "ToString(RandomInRange(255,255))+\";\"+ToString(RandomInRange(255,255))+\";0\""
               ]
             },
             {
@@ -2337,7 +2389,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "16"
               ]
             },
             {
@@ -2357,7 +2409,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.16"
               ]
             },
             {
@@ -2368,7 +2420,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.16"
               ]
             },
             {
@@ -2586,7 +2638,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Together\""
+                "\"Time\""
               ]
             }
           ]
@@ -2886,28 +2938,6 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "CircleOfEmo",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "MentalHealth",
-                "+",
-                "5"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
@@ -2917,44 +2947,11 @@
             },
             {
               "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                "value": "AjoutHasard"
               },
               "parameters": [
-                "CircleOfEmo",
-                "Scale",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::ShapeScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::GravityScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "RandomFloatInRange(-0.15,0.15)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "",
+                "CircleOfEmo"
               ]
             },
             {
@@ -2963,42 +2960,19 @@
               },
               "parameters": [
                 "",
-                "KeyWord",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
+                "PopBubble",
+                "CircleOfEmo.X()",
+                "CircleOfEmo.Y()",
                 ""
               ]
             },
             {
               "type": {
-                "value": "MettreAutour"
+                "value": "Delete"
               },
               "parameters": [
-                "KeyWord",
                 "CircleOfEmo",
-                "0",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Sticker::Sticker::Stick"
-              },
-              "parameters": [
-                "KeyWord",
-                "Sticker",
-                "CircleOfEmo",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "\"Bird\""
+                ""
               ]
             }
           ]
@@ -4456,28 +4430,6 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "CircleOfEmo",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "MentalHealth",
-                "+",
-                "5"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
@@ -4487,44 +4439,11 @@
             },
             {
               "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                "value": "AjoutHasard"
               },
               "parameters": [
-                "CircleOfEmo",
-                "Scale",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::ShapeScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::GravityScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "RandomFloatInRange(-0.15,0.15)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "",
+                "CircleOfEmo"
               ]
             },
             {
@@ -4533,42 +4452,19 @@
               },
               "parameters": [
                 "",
-                "KeyWord",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
+                "PopBubble",
+                "CircleOfEmo.X()",
+                "CircleOfEmo.Y()",
                 ""
               ]
             },
             {
               "type": {
-                "value": "MettreAutour"
+                "value": "Delete"
               },
               "parameters": [
-                "KeyWord",
                 "CircleOfEmo",
-                "0",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Sticker::Sticker::Stick"
-              },
-              "parameters": [
-                "KeyWord",
-                "Sticker",
-                "CircleOfEmo",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "\"Drawing\""
+                ""
               ]
             }
           ]
@@ -5222,28 +5118,6 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "CircleOfEmo",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "MentalHealth",
-                "+",
-                "5"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
@@ -5253,44 +5127,11 @@
             },
             {
               "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                "value": "AjoutHasard"
               },
               "parameters": [
-                "CircleOfEmo",
-                "Scale",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::ShapeScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::GravityScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "RandomFloatInRange(-0.15,0.15)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "",
+                "CircleOfEmo"
               ]
             },
             {
@@ -5299,42 +5140,19 @@
               },
               "parameters": [
                 "",
-                "KeyWord",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
+                "PopBubble",
+                "CircleOfEmo.X()",
+                "CircleOfEmo.Y()",
                 ""
               ]
             },
             {
               "type": {
-                "value": "MettreAutour"
+                "value": "Delete"
               },
               "parameters": [
-                "KeyWord",
                 "CircleOfEmo",
-                "0",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Sticker::Sticker::Stick"
-              },
-              "parameters": [
-                "KeyWord",
-                "Sticker",
-                "CircleOfEmo",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "\"Help\""
+                ""
               ]
             }
           ]
@@ -5490,28 +5308,6 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "CircleOfEmo",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "MentalHealth",
-                "+",
-                "5"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
@@ -5521,44 +5317,11 @@
             },
             {
               "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                "value": "AjoutHasard"
               },
               "parameters": [
-                "CircleOfEmo",
-                "Scale",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::ShapeScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::GravityScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "RandomFloatInRange(-0.15,0.15)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "",
+                "CircleOfEmo"
               ]
             },
             {
@@ -5567,52 +5330,19 @@
               },
               "parameters": [
                 "",
-                "KeyWord",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
+                "PopBubble",
+                "CircleOfEmo.X()",
+                "CircleOfEmo.Y()",
                 ""
               ]
             },
             {
               "type": {
-                "value": "TextObject::Text::SetFontSize"
+                "value": "Delete"
               },
               "parameters": [
-                "KeyWord",
-                "=",
-                "15"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreAutour"
-              },
-              "parameters": [
-                "KeyWord",
                 "CircleOfEmo",
-                "0",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Sticker::Sticker::Stick"
-              },
-              "parameters": [
-                "KeyWord",
-                "Sticker",
-                "CircleOfEmo",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "\"Sister\""
+                ""
               ]
             }
           ]
@@ -7226,6 +6956,17 @@
         },
         {
           "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "TextAnswerHolder",
+            "Opacity",
+            "=",
+            "100"
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -7245,17 +6986,6 @@
             "Resizable",
             "600",
             "200\n"
-          ]
-        },
-        {
-          "type": {
-            "value": "OpacityCapability::OpacityBehavior::SetValue"
-          },
-          "parameters": [
-            "TextAnswerHolder",
-            "Opacity",
-            "=",
-            "150"
           ]
         },
         {
@@ -7500,7 +7230,7 @@
               "parameters": [
                 "TextHolder",
                 "=",
-                "\"[b]Boyfriend:[/b] Hello, I sent Cherry to my mom tonight. Let’s have fun and spend time [shadow=red][b]together[/b][/shadow] tonight.\""
+                "\"[b]Boyfriend:[/b] Hello, I sent Cherry to my mom tonight. Let’s have fun and spend [shadow=red][b]time[/b][/shadow] together tonight.\""
               ]
             },
             {
@@ -7510,7 +7240,7 @@
               "parameters": [
                 "TextAnswerHolder",
                 "=",
-                "\"You're so sweet! Sushi?\""
+                "\"You're so sweet! Should I cook?\""
               ]
             }
           ]
@@ -7821,6 +7551,15 @@
                 "=",
                 "11"
               ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[1]",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -7854,6 +7593,42 @@
                 "TextAnswerHolder",
                 "=",
                 "\"Yes dad, I will try to pass by.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "11"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[1]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
               ]
             }
           ]
@@ -8017,6 +7792,15 @@
                 "=",
                 "15"
               ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -8050,6 +7834,42 @@
                 "TextAnswerHolder",
                 "=",
                 "\"I just need a couple hours to finish it.\nI'll work on it tonight!\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
               ]
             }
           ]
@@ -8213,6 +8033,15 @@
                 "=",
                 "19"
               ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[9]",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -8260,7 +8089,52 @@
               "parameters": [
                 "DialogueCount",
                 "=",
+                "19"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[9]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
                 "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[14]",
+                ""
               ]
             }
           ],
@@ -8309,7 +8183,52 @@
               "parameters": [
                 "DialogueCount",
                 "=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[14]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
                 "21"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[17]",
+                "True"
               ]
             }
           ],
@@ -8358,7 +8277,52 @@
               "parameters": [
                 "DialogueCount",
                 "=",
+                "21"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[17]",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
                 "22"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[17]",
+                "False"
               ]
             }
           ],
@@ -8407,7 +8371,52 @@
               "parameters": [
                 "DialogueCount",
                 "=",
+                "22"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[17]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
                 "23"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[15]",
+                "True"
               ]
             }
           ],
@@ -8442,6 +8451,42 @@
                 "TextAnswerHolder",
                 "=",
                 "\"No you don't need to! See it has a sister gift! \""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "23"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[15]",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
               ]
             }
           ]
@@ -8507,6 +8552,15 @@
                 "=",
                 "25"
               ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[15]",
+                "False"
+              ]
             }
           ],
           "actions": [
@@ -8554,7 +8608,61 @@
               "parameters": [
                 "DialogueCount",
                 "=",
+                "25"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[15]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
                 "26"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[5]",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[21]",
+                "False"
               ]
             }
           ],
@@ -8603,7 +8711,87 @@
               "parameters": [
                 "DialogueCount",
                 "=",
+                "26"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Variable[5]",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Variable[21]",
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
                 "27"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[4]",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[10]",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[16]",
+                "False"
               ]
             }
           ],
@@ -8652,7 +8840,78 @@
               "parameters": [
                 "DialogueCount",
                 "=",
+                "27"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Variable[4]",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Variable[10]",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Variable[16]",
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
                 "28"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[6]",
+                "False"
               ]
             }
           ],
@@ -8701,7 +8960,52 @@
               "parameters": [
                 "DialogueCount",
                 "=",
+                "28"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[6]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
                 "29"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[20]",
+                "False"
               ]
             }
           ],
@@ -8750,7 +9054,52 @@
               "parameters": [
                 "DialogueCount",
                 "=",
+                "29"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[20]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
                 "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[29]",
+                "False"
               ]
             }
           ],
@@ -8791,6 +9140,58 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Variable[29]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "31"
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
@@ -8823,26 +9224,6 @@
       "actions": [
         {
           "type": {
-            "value": "OpacityCapability::OpacityBehavior::SetValue"
-          },
-          "parameters": [
-            "TextAnswerHolder",
-            "Opacity",
-            "=",
-            "255"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"DialogueCharaTimer\""
-          ]
-        },
-        {
-          "type": {
             "value": "PanelSpriteButton::PanelSpriteButton::Activate"
           },
           "parameters": [
@@ -8861,12 +9242,98 @@
         },
         {
           "type": {
-            "value": "AutoTyping::BBText_AutoTyping::StartAtBeginning"
+            "value": "BBText::SetWrappingWidth"
           },
           "parameters": [
-            "TextAnswerHolder",
+            "TextAnswerHolderAutotype",
+            "=",
+            "TextAnswerHolder.Width()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "TextAnswerHolderAutotype",
+            "=",
+            "TextAnswerHolder.X()",
+            "=",
+            "TextAnswerHolder.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "TextAnswerHolderAutotype",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "TextAnswerHolderAutotype",
+            "=",
+            "TextAnswerHolder.GetBBText()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetGlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "StatusTyping",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "TextHolder",
+            "Déplaçable",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
+          },
+          "parameters": [
+            "TextAnswerHolderAutotype",
             "BBText_AutoTyping",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "GlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "StatusTyping",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"DialogueCharaTimer\""
           ]
         }
       ]
@@ -8882,7 +9349,7 @@
             "",
             "\"DialogueCharaTimer\"",
             ">=",
-            "2"
+            "0.5"
           ]
         }
       ],
@@ -8912,6 +9379,14 @@
           "parameters": [
             "TextAnswerHolder",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "TextAnswerHolderAutotype"
           ]
         },
         {
@@ -8991,6 +9466,18 @@
                 "800",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "BulleChara",
+                "=",
+                "TextHolder.X()-15",
+                "=",
+                "TextHolder.Y()-15"
+              ]
             }
           ]
         },
@@ -9017,11 +9504,78 @@
               "parameters": [
                 "TextHolder"
               ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "BulleChara",
+                "=",
+                "TextHolder.X()-15",
+                "=",
+                "TextHolder.Y()-15"
+              ]
             }
           ]
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DraggableBehavior::Dragged"
+          },
+          "parameters": [
+            "TextHolder",
+            "Déplaçable"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "BulleChara",
+            "Opacity",
+            "=",
+            "125"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "DraggableBehavior::Dragged"
+          },
+          "parameters": [
+            "TextHolder",
+            "Déplaçable"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "BulleChara",
+            "Opacity",
+            "=",
+            "255"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -9126,6 +9680,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "BBText_AutoTyping",
+      "type": "AutoTyping::BBText_AutoTyping"
     },
     {
       "name": "Effect",

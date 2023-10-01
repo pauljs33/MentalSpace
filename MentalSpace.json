@@ -654,6 +654,26 @@
         "name": "square7.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "in-the-silence-brock-hewitt-stories-in-sound-main-version-03-42-9706.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "in-the-silence-brock-hewitt-stories-in-sound-main-version-03-42-9706.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "requiem-sarah-spring-sonder-house-main-version-02-59-9990.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "requiem-sarah-spring-sonder-house-main-version-02-59-9990.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1011,20 +1031,30 @@
           "value": false
         }
       ]
+    },
+    {
+      "folded": true,
+      "name": "StatusTyping",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/scne-ag2"
+      "referenceTo": "/layouts/scne-paul"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/scne-paul"
+      "referenceTo": "/layouts/scne-ag2"
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/draggablephysics"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/sticker"
