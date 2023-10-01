@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.330056004916593,
+    "zoomFactor": 0.4753585087126938,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -136,14 +136,15 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 23,
       "layer": "",
       "name": "MentalScoreDev",
       "persistentUuid": "b0ff30e4-7714-4515-9946-d0015efefef8",
-      "width": 0,
-      "x": 807,
-      "y": 1016,
+      "width": 593,
+      "x": 876,
+      "y": 1013,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -205,8 +206,8 @@
       "name": "Perso1color",
       "persistentUuid": "b89120cc-036d-47f5-9bec-8bc135ff459c",
       "width": 594,
-      "x": 55,
-      "y": 263,
+      "x": 58,
+      "y": 260,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -223,6 +224,22 @@
       "x": 440,
       "y": 364,
       "zOrder": 101,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "d427f3ce-00c0-4c12-83b4-a6671b301860",
+      "width": 1915,
+      "x": 5,
+      "y": 1074,
+      "zOrder": 102,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -834,13 +851,65 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.12,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Perso1Line3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 601.5,
+                        "y": 695.5
+                      },
+                      {
+                        "x": 279.5,
+                        "y": 583.5
+                      },
+                      {
+                        "x": 161.5,
+                        "y": 411.5
+                      },
+                      {
+                        "x": 82,
+                        "y": 141
+                      },
+                      {
+                        "x": 241.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 553.5,
+                        "y": 79.5
+                      },
+                      {
+                        "x": 673,
+                        "y": 255.5
+                      },
+                      {
+                        "x": 702,
+                        "y": 503
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Perso1Line7.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1048,6 +1117,49 @@
         "g": 59,
         "r": 59
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -1079,6 +1191,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1635,6 +1748,16 @@
                 "Sticker",
                 "CircleOfEmo",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"Cherry\""
               ]
             }
           ]
@@ -4262,6 +4385,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -4647,6 +4771,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Text drag",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
