@@ -378,12 +378,111 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite3.png",
+        "file": "boyfriend.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite3",
+        "metadata": "",
+        "name": "boyfriend.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/boyfriend.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "boyfriend",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "dad.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "dad.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/dad.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "dad",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Parent.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Parent.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Parent.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Parent",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Doctor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Doctor.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Doctor.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Doctor",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "landlord.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "landlord.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/landlord.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "landlord",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "daughter.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"daughter.png\",\"extension\":\".png\"}",
+        "name": "daughter.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/daughter.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "daughter",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
