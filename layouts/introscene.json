@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.27962265218393795,
+    "zoomFactor": 0.619791666666668,
     "windowMask": false
   },
   "objectsGroups": [
@@ -32,7 +32,7 @@
           "name": "Names"
         },
         {
-          "name": "NewSprite"
+          "name": "brokenMirror"
         },
         {
           "name": "Continue"
@@ -122,7 +122,7 @@
       "depth": 1,
       "height": 1753,
       "layer": "",
-      "name": "NewSprite",
+      "name": "brokenMirror",
       "persistentUuid": "016c2305-188e-4a62-acd7-607d572bdfb3",
       "width": 961,
       "x": 919,
@@ -313,68 +313,6 @@
         "align": "center",
         "wordWrap": true
       }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "broken mirror",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "broken mirror.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 1
-                      },
-                      {
-                        "x": 591,
-                        "y": 1
-                      },
-                      {
-                        "x": 591,
-                        "y": 852
-                      },
-                      {
-                        "x": 0,
-                        "y": 852
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "assetStoreId": "f0c3d7ae6099e3b9b8beed4e30b555107550b4fb2a5879e984a014b1e06865bf",

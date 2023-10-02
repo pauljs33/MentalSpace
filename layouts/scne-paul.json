@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4303403802207665,
+    "zoomFactor": 0.3526904934771236,
     "windowMask": false
   },
   "objectsGroups": [
@@ -51,6 +51,20 @@
         },
         {
           "name": "Sister"
+        }
+      ]
+    },
+    {
+      "name": "End",
+      "objects": [
+        {
+          "name": "Back_to_menu"
+        },
+        {
+          "name": "background"
+        },
+        {
+          "name": "brokenMirror"
         }
       ]
     }
@@ -160,7 +174,7 @@
       "name": "Answer",
       "persistentUuid": "737d933f-4968-49a0-b4ed-d566dc84a185",
       "width": 0,
-      "x": 1033,
+      "x": 977,
       "y": 876,
       "zOrder": 10,
       "numberProperties": [],
@@ -191,7 +205,7 @@
       "name": "EmptyTextAnswerSpawn",
       "persistentUuid": "d798790d-2dab-4914-bb08-222b8dc82edb",
       "width": 0,
-      "x": 908,
+      "x": 869,
       "y": 623,
       "zOrder": 12,
       "numberProperties": [],
@@ -355,6 +369,68 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1279,
+      "layer": "",
+      "name": "background",
+      "persistentUuid": "9bad695e-f653-4fbd-9307-3767ee924680",
+      "width": 1965,
+      "x": -27,
+      "y": -107,
+      "zOrder": 105,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 350,
+      "customSize": true,
+      "depth": 1,
+      "height": 1322,
+      "layer": "",
+      "name": "brokenMirror",
+      "persistentUuid": "4d7ea331-58b6-46e0-9827-bf85313af48e",
+      "width": 817,
+      "x": 226,
+      "y": -72,
+      "zOrder": 106,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Texte_de_fin",
+      "persistentUuid": "250fac21-d880-4250-a17e-25b248888abb",
+      "width": 0,
+      "x": 1360,
+      "y": 537,
+      "zOrder": 107,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Back_to_menu",
+      "persistentUuid": "d5f3a31f-4a4f-4db8-8a83-60a3c82c3940",
+      "width": 0,
+      "x": 1350,
+      "y": 903,
+      "zOrder": 108,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -452,7 +528,7 @@
         "fontSize": 30,
         "visible": true,
         "color": "0;0;0",
-        "fontFamily": "Papernotes.ttf",
+        "fontFamily": "assets\\mononoki-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -471,7 +547,7 @@
         "fontSize": 30,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Papernotes.ttf",
+        "fontFamily": "assets\\mononoki-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -498,7 +574,7 @@
         "fontSize": 30,
         "visible": true,
         "color": "0;0;0",
-        "fontFamily": "Papernotes.ttf",
+        "fontFamily": "assets\\mononoki-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -745,7 +821,7 @@
           "height": 64,
           "leftMargin": 16,
           "rightMargin": 16,
-          "texture": "White Square Decorated Button_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png2",
           "tiled": true,
           "topMargin": 16,
           "width": 192
@@ -755,7 +831,7 @@
           "height": 64,
           "leftMargin": 16,
           "rightMargin": 16,
-          "texture": "White Square Decorated Button_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png2",
           "tiled": true,
           "topMargin": 16,
           "width": 192
@@ -770,9 +846,73 @@
           "textAlignment": "center",
           "characterSize": 20,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 70,
+            "g": 68,
+            "r": 37
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "White Square Decorated Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 22,
+          "width": 192
+        }
+      }
+    },
+    {
+      "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
+      "name": "Back_to_menu",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 6,
+        "BottomPadding": 24,
+        "TopPadding": 20,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "White Square Decorated Button_Hovered.png2",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "White Square Decorated Button_Idle.png2",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Back to menu",
+          "font": "mononoki-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 70,
+            "g": 68,
+            "r": 37
           }
         },
         "Pressed": {
@@ -1847,11 +1987,153 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Mirror",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Mirror",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"Mirror\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":681,\\\"width\\\":253,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1 (imported)\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Mirror\"],\"name\":\"Mirror\"}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Mirror",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 252,
+                        "y": 0
+                      },
+                      {
+                        "x": 252,
+                        "y": 680
+                      },
+                      {
+                        "x": 0,
+                        "y": 680
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "background",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Texte_de_fin",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Text de fin[/b]",
+        "opacity": 255,
+        "fontSize": 30,
+        "visible": true,
+        "color": "255;242;237",
+        "fontFamily": "assets\\mononoki-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "events": [
     {
-      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1872,8 +2154,16 @@
             "",
             "requiem-sarah-spring-sonder-house-main-version-02-59-9990.mp3",
             "yes",
-            "50",
+            "0",
             "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "End"
           ]
         }
       ]
@@ -2492,7 +2782,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "14"
               ]
             },
             {
@@ -2512,7 +2802,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -2523,7 +2813,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -2567,16 +2857,6 @@
                 "CircleOfEmo",
                 "-5",
                 "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -2636,7 +2916,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "25"
               ]
             },
             {
@@ -2656,7 +2936,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.25"
               ]
             },
             {
@@ -2667,7 +2947,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.25"
               ]
             },
             {
@@ -2687,7 +2967,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;77;77\""
               ]
             },
             {
@@ -2715,16 +2995,6 @@
             },
             {
               "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
-              ]
-            },
-            {
-              "type": {
                 "value": "Sticker::Sticker::Stick"
               },
               "parameters": [
@@ -2741,7 +3011,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"appointment\""
+                "\"APPOINTMENT\""
               ]
             }
           ]
@@ -2780,7 +3050,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "14"
               ]
             },
             {
@@ -2800,7 +3070,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -2811,7 +3081,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -2831,7 +3101,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;166;166\""
               ]
             },
             {
@@ -2875,7 +3145,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Ghost\""
+                "\"GHOST\""
               ]
             }
           ]
@@ -2970,7 +3240,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "12"
               ]
             },
             {
@@ -2990,7 +3260,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -3001,7 +3271,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -3021,7 +3291,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;20;20\""
               ]
             },
             {
@@ -3065,7 +3335,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Rent\""
+                "\"RENT\""
               ]
             }
           ]
@@ -3104,7 +3374,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "12"
               ]
             },
             {
@@ -3124,7 +3394,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -3135,7 +3405,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -3155,7 +3425,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;82;82\""
               ]
             },
             {
@@ -3199,7 +3469,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Intern\""
+                "\"INTERN\""
               ]
             }
           ]
@@ -3239,7 +3509,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -3250,7 +3520,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -3270,7 +3540,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;87;87\""
               ]
             },
             {
@@ -3314,7 +3584,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Report\""
+                "\"REPORT\""
               ]
             }
           ]
@@ -3353,7 +3623,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "16"
               ]
             },
             {
@@ -3373,7 +3643,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.16"
               ]
             },
             {
@@ -3384,7 +3654,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.16"
               ]
             },
             {
@@ -3404,7 +3674,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;186;186\""
               ]
             },
             {
@@ -3448,7 +3718,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Laundry\""
+                "\"LAUNDRY\""
               ]
             }
           ]
@@ -3487,7 +3757,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "8"
               ]
             },
             {
@@ -3507,7 +3777,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.08"
               ]
             },
             {
@@ -3518,7 +3788,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.08"
               ]
             },
             {
@@ -3538,7 +3808,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;122;122\""
               ]
             },
             {
@@ -3621,7 +3891,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "7"
               ]
             },
             {
@@ -3641,7 +3911,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.07"
               ]
             },
             {
@@ -3652,7 +3922,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.07"
               ]
             },
             {
@@ -3672,7 +3942,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;20;20\""
               ]
             },
             {
@@ -3716,7 +3986,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Slap\""
+                "\"SLAP\""
               ]
             }
           ]
@@ -3755,7 +4025,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "12"
               ]
             },
             {
@@ -3775,7 +4045,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -3786,7 +4056,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -3806,7 +4076,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;62;62\""
               ]
             },
             {
@@ -3850,7 +4120,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"School\""
+                "\"SCHOOL\""
               ]
             }
           ]
@@ -3889,7 +4159,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "14"
               ]
             },
             {
@@ -3909,7 +4179,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -3920,7 +4190,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -3940,7 +4210,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;106;106\""
               ]
             },
             {
@@ -3984,7 +4254,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Money\""
+                "\"MONEY\""
               ]
             }
           ]
@@ -4023,7 +4293,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "14"
               ]
             },
             {
@@ -4043,7 +4313,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -4054,7 +4324,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -4074,7 +4344,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;33;33\""
               ]
             },
             {
@@ -4118,7 +4388,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Report\""
+                "\"REPORT\""
               ]
             }
           ]
@@ -4158,7 +4428,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.17"
               ]
             },
             {
@@ -4169,7 +4439,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.17"
               ]
             },
             {
@@ -4189,7 +4459,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;24;24\""
               ]
             },
             {
@@ -4233,7 +4503,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Contract\""
+                "\"CONTRACT\""
               ]
             }
           ]
@@ -4272,7 +4542,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "12"
               ]
             },
             {
@@ -4292,7 +4562,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -4303,7 +4573,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -4323,7 +4593,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;110;110\""
               ]
             },
             {
@@ -4367,7 +4637,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Mother\""
+                "\"MOTHER\""
               ]
             }
           ]
@@ -4462,7 +4732,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "20"
               ]
             },
             {
@@ -4482,7 +4752,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.20"
               ]
             },
             {
@@ -4493,7 +4763,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.2"
               ]
             },
             {
@@ -4513,7 +4783,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;62;62\""
               ]
             },
             {
@@ -4557,7 +4827,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Immigration\""
+                "\"IMMIGRATION\""
               ]
             }
           ]
@@ -4596,7 +4866,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "14"
               ]
             },
             {
@@ -4616,7 +4886,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -4627,7 +4897,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.14"
               ]
             },
             {
@@ -4647,7 +4917,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;75;75\""
               ]
             },
             {
@@ -4691,7 +4961,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Last call\""
+                "\"LAST CALL\""
               ]
             }
           ]
@@ -4731,7 +5001,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.17"
               ]
             },
             {
@@ -4742,7 +5012,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.17"
               ]
             },
             {
@@ -4762,7 +5032,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;29;29\""
               ]
             },
             {
@@ -4806,7 +5076,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Payment\""
+                "\"PAYMENT\""
               ]
             }
           ]
@@ -4845,7 +5115,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "18"
               ]
             },
             {
@@ -4865,7 +5135,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.18"
               ]
             },
             {
@@ -4876,7 +5146,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.18"
               ]
             },
             {
@@ -4896,7 +5166,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;83;83\""
               ]
             },
             {
@@ -4940,7 +5210,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Cherry\""
+                "\"CHERRY\""
               ]
             }
           ]
@@ -4980,7 +5250,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.25"
               ]
             },
             {
@@ -4991,7 +5261,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.25"
               ]
             },
             {
@@ -5011,7 +5281,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;110;110\""
               ]
             },
             {
@@ -5055,7 +5325,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Crazy\""
+                "\"CRAZY\""
               ]
             }
           ]
@@ -5150,7 +5420,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "27"
               ]
             },
             {
@@ -5170,7 +5440,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.27"
               ]
             },
             {
@@ -5181,7 +5451,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.27"
               ]
             },
             {
@@ -5201,7 +5471,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;62;62\""
               ]
             },
             {
@@ -5245,7 +5515,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Ungrateful\""
+                "\"UNGRATEFUL\""
               ]
             }
           ]
@@ -5360,7 +5630,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.05"
               ]
             },
             {
@@ -5371,7 +5641,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.05"
               ]
             },
             {
@@ -5391,7 +5661,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;97;97\""
               ]
             },
             {
@@ -5404,16 +5674,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -5445,7 +5705,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"War\""
+                "\"WAR\""
               ]
             }
           ]
@@ -5484,7 +5744,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "20"
               ]
             },
             {
@@ -5504,7 +5764,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.2"
               ]
             },
             {
@@ -5515,7 +5775,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.2"
               ]
             },
             {
@@ -5535,7 +5795,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;20;20\""
               ]
             },
             {
@@ -5548,16 +5808,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -5589,7 +5839,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Sister\""
+                "\"SISTER\""
               ]
             }
           ]
@@ -5628,7 +5878,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "18"
               ]
             },
             {
@@ -5648,7 +5898,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.18"
               ]
             },
             {
@@ -5659,7 +5909,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.18"
               ]
             },
             {
@@ -5679,7 +5929,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;45;45\""
               ]
             },
             {
@@ -5692,16 +5942,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -5733,7 +5973,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Sorry\""
+                "\"SORRY\""
               ]
             }
           ]
@@ -5773,7 +6013,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.17"
               ]
             },
             {
@@ -5784,7 +6024,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.17"
               ]
             },
             {
@@ -5804,7 +6044,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;91;91\""
               ]
             },
             {
@@ -5817,16 +6057,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -5858,7 +6088,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Apart\""
+                "\"APART\""
               ]
             }
           ]
@@ -5898,7 +6128,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.19"
               ]
             },
             {
@@ -5909,7 +6139,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.19"
               ]
             },
             {
@@ -5929,7 +6159,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;56;56\""
               ]
             },
             {
@@ -5942,16 +6172,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -5983,7 +6203,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Forgot\""
+                "\"FORGOT\""
               ]
             }
           ]
@@ -6022,7 +6242,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "12"
               ]
             },
             {
@@ -6042,7 +6262,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -6053,7 +6273,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.12"
               ]
             },
             {
@@ -6073,7 +6293,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;80;80\""
               ]
             },
             {
@@ -6086,16 +6306,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -6127,7 +6337,122 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Can't\""
+                "\"CAN'T\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "28"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "CircleOfEmo",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Scale",
+                "=",
+                "0.14"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::ShapeScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "0.14"
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::GravityScale"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "Physics2",
+                "=",
+                "RandomFloatInRange(-0.15,0.15)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "CircleOfEmo",
+                "\"255;36;36\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "KeyWord",
+                "EmptyBallSpawn.X()",
+                "EmptyBallSpawn.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutour"
+              },
+              "parameters": [
+                "KeyWord",
+                "CircleOfEmo",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "KeyWord",
+                "Sticker",
+                "CircleOfEmo",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "KeyWord",
+                "=",
+                "\"FORGOT\""
               ]
             }
           ]
@@ -6198,7 +6523,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;18;18\""
               ]
             },
             {
@@ -6211,16 +6536,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -6252,132 +6567,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Forgot\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "DialogueCount",
-                "=",
-                "28"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "CircleOfEmo",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Scale",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::ShapeScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "0.15"
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::GravityScale"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "Physics2",
-                "=",
-                "RandomFloatInRange(-0.15,0.15)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "KeyWord",
-                "EmptyBallSpawn.X()",
-                "EmptyBallSpawn.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreAutour"
-              },
-              "parameters": [
-                "KeyWord",
-                "CircleOfEmo",
-                "0",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Sticker::Sticker::Stick"
-              },
-              "parameters": [
-                "KeyWord",
-                "Sticker",
-                "CircleOfEmo",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "\"Stop\""
+                "\"STOP\""
               ]
             }
           ]
@@ -6416,7 +6606,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "21"
               ]
             },
             {
@@ -6436,7 +6626,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.21"
               ]
             },
             {
@@ -6447,7 +6637,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.21"
               ]
             },
             {
@@ -6467,7 +6657,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;134;134\""
               ]
             },
             {
@@ -6480,16 +6670,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -6521,7 +6701,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Health\""
+                "\"HEALTH\""
               ]
             }
           ]
@@ -6560,7 +6740,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "29"
               ]
             },
             {
@@ -6580,7 +6760,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.29"
               ]
             },
             {
@@ -6591,7 +6771,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.29"
               ]
             },
             {
@@ -6611,7 +6791,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;91;91\""
               ]
             },
             {
@@ -6624,16 +6804,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -6665,7 +6835,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Authorities\""
+                "\"AUTHORITIES\""
               ]
             }
           ]
@@ -6704,7 +6874,7 @@
               "parameters": [
                 "MentalHealth",
                 "+",
-                "5"
+                "27"
               ]
             },
             {
@@ -6724,7 +6894,7 @@
                 "CircleOfEmo",
                 "Scale",
                 "=",
-                "0.15"
+                "0.27"
               ]
             },
             {
@@ -6735,7 +6905,7 @@
                 "CircleOfEmo",
                 "Physics2",
                 "=",
-                "0.15"
+                "0.27"
               ]
             },
             {
@@ -6755,7 +6925,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;51;51\""
               ]
             },
             {
@@ -6768,16 +6938,6 @@
                 "EmptyBallSpawn.X()",
                 "EmptyBallSpawn.Y()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
               ]
             },
             {
@@ -6809,7 +6969,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Mommy\""
+                "\"MOMMY\""
               ]
             }
           ]
@@ -6833,6 +6993,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -6886,7 +7047,7 @@
           "parameters": [
             "BulleChara",
             "Resizable",
-            "600",
+            "650",
             "220\n\n"
           ]
         },
@@ -6920,7 +7081,7 @@
             "TextAnswerHolder",
             "Opacity",
             "=",
-            "255"
+            "200"
           ]
         },
         {
@@ -6942,7 +7103,7 @@
           "parameters": [
             "BulleChara2",
             "Resizable",
-            "600",
+            "450",
             "200\n"
           ]
         },
@@ -6953,7 +7114,7 @@
           "parameters": [
             "TextAnswerHolder",
             "=",
-            "480"
+            "370"
           ]
         }
       ],
