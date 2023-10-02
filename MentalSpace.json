@@ -163,7 +163,7 @@
         "alwaysLoaded": false,
         "file": "assets/White Square Decorated Button_Idle.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/White Square Decorated Button_Idle.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "White Square Decorated Button_Idle.png",
         "smoothed": true,
         "userAdded": false,
@@ -917,6 +917,70 @@
         "name": "NewSprite6",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/White Square Decorated Button_Idle.png2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\White Square Decorated Button_Idle.png2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/White Square Decorated Button_Hovered.png2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\White Square Decorated Button_Hovered.png2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/White Square Decorated Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\White Square Decorated Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "glass-broken-43626.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "glass-broken-43626.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/White Square Decorated Button_Hovered.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "White Square Decorated Button_Hovered.png3",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1414,6 +1478,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/scne-paul"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/fin"
     }
   ],
   "externalEvents": [],

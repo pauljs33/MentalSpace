@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.619791666666668,
+    "zoomFactor": 0.4913877545329367,
     "windowMask": false
   },
   "objectsGroups": [
@@ -171,8 +171,8 @@
       "name": "Start",
       "persistentUuid": "e4d49991-8bfa-4f83-bd13-b1b28f31f80d",
       "width": 0,
-      "x": 1024,
-      "y": 824,
+      "x": 1004,
+      "y": 828,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -336,7 +336,7 @@
           "height": 64,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "Transparent Button With White Blue Border_Hovered.png",
+          "texture": "assets\\White Square Decorated Button_Hovered.png2.png",
           "tiled": false,
           "topMargin": 10,
           "width": 192
@@ -346,7 +346,7 @@
           "height": 64,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "Transparent Button With White Blue Border_Idle.png",
+          "texture": "assets\\White Square Decorated Button_Idle.png2.png",
           "tiled": false,
           "topMargin": 10,
           "width": 192
@@ -361,9 +361,9 @@
           "textAlignment": "center",
           "characterSize": 25,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 70,
+            "g": 68,
+            "r": 37
           }
         },
         "Pressed": {
@@ -371,7 +371,7 @@
           "height": 64,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "Transparent Button With White Blue Border_Pressed.png",
+          "texture": "assets\\White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 10,
           "width": 192
@@ -400,7 +400,7 @@
           "height": 64,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "Transparent Button With White Blue Border_Hovered.png",
+          "texture": "assets\\White Square Decorated Button_Hovered.png2.png",
           "tiled": false,
           "topMargin": 10,
           "width": 192
@@ -410,7 +410,7 @@
           "height": 64,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "Transparent Button With White Blue Border_Idle.png",
+          "texture": "assets\\White Square Decorated Button_Idle.png2.png",
           "tiled": false,
           "topMargin": 10,
           "width": 192
@@ -435,7 +435,7 @@
           "height": 64,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "Transparent Button With White Blue Border_Pressed.png",
+          "texture": "assets\\White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 10,
           "width": 192
@@ -527,12 +527,12 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b]2. Remember, this is [shadow=black]not[/shadow] mandatory. Your mental space is [shadow=black]limited[/shadow].[/b]",
+        "text": "[shadow=black]2.[/shadow] Remember, this is [b]not[/b]mandatory. Your mental space is [b]limited[/b]",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
         "color": "255;59;59",
-        "fontFamily": "Arial",
+        "fontFamily": "assets\\mononoki-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -546,12 +546,12 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b]3. [shadow=black]Click[/shadow] on the button to validate your [shadow=black]answer[/shadow] above and go to the [shadow=black]next[/shadow] interaction.[/b]\n\nWhether you have taken the mental load or not, click on Continue to go the next interaction.",
+        "text": "[shadow=black]3.[/shadow] [b]Whether[/b] you have taken the mental load or not, [b]click[/b] on \"Continue\" to go the next interaction.",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
         "color": "255;59;59",
-        "fontFamily": "Arial",
+        "fontFamily": "assets\\mononoki-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -565,12 +565,12 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b]1.[shadow=black]Drag & Drop[/shadow] the text in[shadow=black] your head[/shadow] if you agree to take the [shadow=black]mental load[/shadow] of what is asked[/b]\n",
+        "text": "[shadow=black]1. [/shadow][b]Drag & Drop[/b] the text in [b]your head[/b] if you agree to take the [b]mental load[/b] of what is asked\n",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
         "color": "255;51;51",
-        "fontFamily": "Arial",
+        "fontFamily": "assets\\mononoki-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
