@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5079575118131747,
+    "zoomFactor": 0.2987985363606915,
     "windowMask": false
   },
   "objectsGroups": [
@@ -355,6 +355,22 @@
       "x": 1063,
       "y": 1338,
       "zOrder": 104,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 25,
+      "height": 22,
+      "layer": "",
+      "name": "Sound",
+      "persistentUuid": "a177f3b7-0c2c-40e4-9a57-ca3cb4f23ac8",
+      "width": 114,
+      "x": 1766,
+      "y": 34,
+      "zOrder": 105,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2079,6 +2095,69 @@
         "align": "left",
         "wordWrap": true
       }
+    },
+    {
+      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+      "name": "Sound",
+      "tags": "",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 6,
+        "BarLeftPadding": 6,
+        "BarRightPadding": 6,
+        "BarBottomPadding": 6,
+        "LabelMargin": 6
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 28,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "Square White Slider Border.png",
+          "tiled": false,
+          "topMargin": 4,
+          "width": 265
+        },
+        "FillBar": {
+          "bottomMargin": 2,
+          "height": 16,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Square White Slider Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 16
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "It displays the value when it changes.",
+          "font": "mononoki-Regular.ttf",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 77,
+            "g": 77,
+            "r": 77
+          }
+        },
+        "Thumb": {
+          "bottomMargin": 2,
+          "height": 36,
+          "leftMargin": 1,
+          "rightMargin": 1,
+          "texture": "Square White Slider Thumb.png",
+          "tiled": false,
+          "topMargin": 2,
+          "width": 22
+        }
+      }
     }
   ],
   "events": [
@@ -2097,13 +2176,23 @@
       "actions": [
         {
           "type": {
+            "value": "ModGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "Sound.Value()"
+          ]
+        },
+        {
+          "type": {
             "value": "PlaySound"
           },
           "parameters": [
             "",
             "requiem-sarah-spring-sonder-house-main-version-02-59-9990.mp3",
             "yes",
-            "30",
+            "100",
             "1"
           ]
         }
@@ -2114,6 +2203,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Générateur de balle",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6998,6 +7088,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Générateur de dialogue",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7036,6 +7127,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -9411,6 +9503,16 @@
                     "=",
                     "\"...\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "TextHolder",
+                    "Déplaçable",
+                    "no"
+                  ]
                 }
               ]
             },
@@ -9863,6 +9965,32 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+          },
+          "parameters": [
+            "Sound",
+            "="
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "Sound.Value()"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
