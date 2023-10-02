@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "IntroScene",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -25,7 +25,7 @@
     "author": "",
     "windowWidth": 1920,
     "windowHeight": 1080,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "B:\\Users\\Bojack\\Desktop\\MentalSpace",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -43,7 +43,7 @@
       "progressBarMaxWidth": 200,
       "progressBarMinWidth": 40,
       "progressBarWidthPercent": 30,
-      "showGDevelopSplash": true,
+      "showGDevelopSplash": false,
       "showProgressBar": true
     },
     "watermark": {
