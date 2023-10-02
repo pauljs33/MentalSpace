@@ -198,7 +198,15 @@
       "type": "BBText::BBText",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "BBText_AutoTyping",
+          "type": "AutoTyping::BBText_AutoTyping",
+          "Interval": 0.05,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
       "content": {
         "text": "TEST\n",
         "opacity": 255,
@@ -308,6 +316,28 @@
         },
         {
           "type": {
+            "value": "AutoTyping::BBText_AutoTyping::SkipToEnd"
+          },
+          "parameters": [
+            "End_Text",
+            "BBText_AutoTyping",
+            "\"I can't.. I just\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusic"
+          },
+          "parameters": [
+            "",
+            "underwater-white-noise-46423.mp3",
+            "yes",
+            "50",
+            "100"
+          ]
+        },
+        {
+          "type": {
             "value": "Cache"
           },
           "parameters": [
@@ -322,6 +352,18 @@
       "actions": []
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Too much mental health"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -331,7 +373,7 @@
           "parameters": [
             "MentalHealth",
             ">",
-            "150"
+            "140"
           ]
         }
       ],
@@ -347,6 +389,18 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Not enough charge taken"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -376,86 +430,16 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "VarGlobal"
-          },
-          "parameters": [
-            "MentalHealth",
-            "<",
-            "150"
-          ]
-        },
-        {
-          "type": {
-            "value": "VarGlobal"
-          },
-          "parameters": [
-            "MentalHealth",
-            ">",
-            "90"
-          ]
-        },
-        {
-          "type": {
-            "value": "GlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "Variable[29]",
-            "True"
-          ]
-        },
-        {
-          "type": {
-            "value": "GlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "Variable[20]",
-            "True"
-          ]
-        },
-        {
-          "type": {
-            "value": "GlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "Variable[4]",
-            "True"
-          ]
-        },
-        {
-          "type": {
-            "value": "GlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "Variable[4]",
-            "True"
-          ]
-        },
-        {
-          "type": {
-            "value": "GlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "Variable[16]",
-            "True"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "BBText::SetBBText"
-          },
-          "parameters": [
-            "End_Text",
-            "=",
-            "\"One day at a time, hopping I won't fall tomorrow\""
-          ]
-        }
-      ]
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "\"Good ending\""
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -467,7 +451,56 @@
           "parameters": [
             "MentalHealth",
             "<",
-            "120"
+            "140"
+          ]
+        },
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "MentalHealth",
+            ">",
+            "90"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "End_Text",
+            "=",
+            "\"One step at a time\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Viré"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "MentalHealth",
+            "<",
+            "140"
           ]
         },
         {
@@ -485,24 +518,6 @@
             "value": "GlobalVariableAsBoolean"
           },
           "parameters": [
-            "Variable[29]",
-            "False"
-          ]
-        },
-        {
-          "type": {
-            "value": "GlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "Variable[20]",
-            "False"
-          ]
-        },
-        {
-          "type": {
-            "value": "GlobalVariableAsBoolean"
-          },
-          "parameters": [
             "Variable[4]",
             "False"
           ]
@@ -512,7 +527,7 @@
             "value": "GlobalVariableAsBoolean"
           },
           "parameters": [
-            "Variable[4]",
+            "Variable[10]",
             "False"
           ]
         },
@@ -540,6 +555,189 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Perte du couple"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "MentalHealth",
+            "<",
+            "140"
+          ]
+        },
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "MentalHealth",
+            ">",
+            "90"
+          ]
+        },
+        {
+          "type": {
+            "value": "GlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "Variable[5]",
+            "False"
+          ]
+        },
+        {
+          "type": {
+            "value": "GlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "Variable[21]",
+            "False"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "End_Text",
+            "=",
+            "\"He should have understood you\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Ambulance"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "MentalHealth",
+            "<",
+            "140"
+          ]
+        },
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "MentalHealth",
+            ">",
+            "90"
+          ]
+        },
+        {
+          "type": {
+            "value": "GlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "Variable[29]",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "End_Text",
+            "=",
+            "\"I think you need help\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Perd ton appart"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "MentalHealth",
+            "<",
+            "140"
+          ]
+        },
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "MentalHealth",
+            ">",
+            "90"
+          ]
+        },
+        {
+          "type": {
+            "value": "GlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "Variable[20]",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "End_Text",
+            "=",
+            "\"Where your daughter is going to sleep?\""
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -550,11 +748,26 @@
             "",
             "\"Debut de Scene\"",
             ">",
-            "1"
+            "0.5"
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "End",
+            ""
+          ]
+        },
         {
           "type": {
             "value": "PlayMusic"
@@ -563,17 +776,8 @@
             "",
             "glass-broken-43626.mp3",
             "no",
-            "10",
+            "50",
             "100"
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "End",
-            ""
           ]
         }
       ]
@@ -734,6 +938,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "BBText_AutoTyping",
+      "type": "AutoTyping::BBText_AutoTyping"
     },
     {
       "name": "Effect",

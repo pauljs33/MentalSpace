@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4913877545329367,
+    "zoomFactor": 0.4163025217733338,
     "windowMask": false
   },
   "objectsGroups": [
@@ -36,6 +36,9 @@
         },
         {
           "name": "Continue"
+        },
+        {
+          "name": "NamesCredits"
         }
       ]
     },
@@ -152,12 +155,11 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": true,
       "name": "ImgTuto",
       "persistentUuid": "ca8a2b8b-4d5b-4667-ad45-52d687791e79",
       "width": 0,
-      "x": 62,
-      "y": 57,
+      "x": 57,
+      "y": 47,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -186,7 +188,7 @@
       "layer": "",
       "name": "_2_",
       "persistentUuid": "6bb39e85-04ee-4f0a-a45d-dea399350ca5",
-      "width": 515,
+      "width": 487,
       "x": 779,
       "y": 489,
       "zOrder": 7,
@@ -273,6 +275,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 75,
+      "layer": "",
+      "name": "NamesCredits",
+      "persistentUuid": "a5a360aa-1594-4d4f-92fb-653f946903b1",
+      "width": 340,
+      "x": 47,
+      "y": 973,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -304,13 +322,32 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b] A game by Paul E. & Agathe L.[/b] \n\n\"Requiem\" a music by Sarah Spring",
+        "text": "[b]A game by Agathe L. and Paul E.[/b]",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
         "color": "37;68;70",
         "fontFamily": "assets\\mononoki-Regular.ttf",
         "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NamesCredits",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Song Credits:\nRequiem by Sarah Spring",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "37;68;70",
+        "fontFamily": "assets\\mononoki-Regular.ttf",
+        "align": "left",
         "wordWrap": true
       }
     },
@@ -527,7 +564,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[shadow=black]2.[/shadow] Remember, this is [b]not[/b]mandatory. Your mental space is [b]limited[/b]",
+        "text": "[shadow=black]2.[/shadow] This is [b]not[/b] mandatory. Your mental space is [b]limited[/b]",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
@@ -565,7 +602,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[shadow=black]1. [/shadow][b]Drag & Drop[/b] the text in [b]your head[/b] if you agree to take the [b]mental load[/b] of what is asked\n",
+        "text": "[shadow=black]1. [/shadow][b]Drag & Drop[/b] the text in [b]your head[/b] if you agree to take the [b]mental load[/b]\n",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
@@ -716,6 +753,16 @@
       "actions": [
         {
           "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "Start",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Cache"
           },
           "parameters": [
@@ -752,6 +799,16 @@
           },
           "parameters": [
             "Tuto",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "Start",
+            "yes",
             ""
           ]
         }

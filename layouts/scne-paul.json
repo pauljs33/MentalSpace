@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5800155239904876,
+    "zoomFactor": 0.5079575118131747,
     "windowMask": false
   },
   "objectsGroups": [
@@ -355,36 +355,6 @@
       "x": 1063,
       "y": 1338,
       "zOrder": 104,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "MentalScore__Debug_",
-      "persistentUuid": "711f51e0-a217-4152-8308-fd5512032f15",
-      "width": 0,
-      "x": 916,
-      "y": 1021,
-      "zOrder": 109,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Dialogue_Count",
-      "persistentUuid": "22fa674e-57ad-4856-80ed-b6b23efe9447",
-      "width": 0,
-      "x": 1318,
-      "y": 1030,
-      "zOrder": 110,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3156,6 +3126,16 @@
                 },
                 {
                   "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "MentalHealth",
+                    "-",
+                    "15"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AjoutHasard"
                   },
                   "parameters": [
@@ -4648,6 +4628,16 @@
                 },
                 {
                   "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "MentalHealth",
+                    "-",
+                    "15"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AjoutHasard"
                   },
                   "parameters": [
@@ -5332,6 +5322,16 @@
                   "parameters": [
                     "Variable[22]",
                     "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "MentalHealth",
+                    "-",
+                    "15"
                   ]
                 },
                 {
@@ -6960,6 +6960,24 @@
               "actions": [
                 {
                   "type": {
+                    "value": "SetLayerEffectParameter"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "\"Effect\"",
+                    "\"vignetting\"",
+                    "GlobalVariable(MentalHealth)/250"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
                     "value": "TextObject::String"
                   },
                   "parameters": [
@@ -6984,6 +7002,39 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "MentalHealth",
+                ">",
+                "140"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DialogueCount",
+                "=",
+                "31"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -7039,7 +7090,7 @@
                 "BulleChara",
                 "Resizable",
                 "650",
-                "220\n\n"
+                "300\n"
               ]
             },
             {
@@ -8934,7 +8985,7 @@
                   "parameters": [
                     "TextHolder",
                     "=",
-                    "\"[b]Boss:[/b] Hello Eva, I’m sorry, but we [shadow=red][b]can’t[/b][/shadow] keep continuing like this. You didn’t think of closing the shop, [shadow=red][b]forgot[/b][/shadow] about the intern and never sent your report. I’m sorry, but I am afraid your contribution to this company will [shadow=red][b]stop[/b][/shadow] here.\""
+                    "\"[b]Boss:[/b] Hello Eva, I’m sorry, but we [shadow=red][b]can’t[/b][/shadow] keep continuing like this. You didn’t think of closing the shop, [shadow=red][b]forgot[/b][/shadow] the intern and never sent your report. Your contribution to this company will [shadow=red][b]stop[/b][/shadow] here.\""
                   ]
                 },
                 {
@@ -9054,7 +9105,7 @@
                   "parameters": [
                     "TextHolder",
                     "=",
-                    "\"[b]Doctor:[/b] Good morning Madam. Doctor Tebbs speaking. Since we can’t arrange an appointment soon, I advise you to see a specialist. Please check your [shadow=red][b]health[/b][/shadow] care plan before you see him.\n\""
+                    "\"[b]Doctor:[/b] Good morning Madam. Since we can’t arrange an appointment soon, I advise you to see a specialist. Please check your [shadow=red][b]health[/b][/shadow] care plan before you see him.\n\""
                   ]
                 },
                 {
@@ -9392,33 +9443,6 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarGlobal"
-                  },
-                  "parameters": [
-                    "MentalHealth",
-                    ">",
-                    "120"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Fin\"",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
@@ -9439,36 +9463,6 @@
                     "DialogueCount",
                     "+",
                     "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarGlobal"
-                  },
-                  "parameters": [
-                    "MentalHealth",
-                    "<",
-                    "10\n"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetLayerEffectParameter"
-                  },
-                  "parameters": [
-                    "",
-                    "",
-                    "\"Effect\"",
-                    "\"vignetting\"",
-                    "+0.01"
                   ]
                 }
               ]
