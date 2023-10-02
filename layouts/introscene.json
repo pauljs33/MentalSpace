@@ -546,7 +546,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b]3. [shadow=black]Click[/shadow] on the button to validate your [shadow=black]answer[/shadow] above and go to the [shadow=black]next[/shadow] interaction.[/b]",
+        "text": "[b]3. [shadow=black]Click[/shadow] on the button to validate your [shadow=black]answer[/shadow] above and go to the [shadow=black]next[/shadow] interaction.[/b]\n\nWhether you have taken the mental load or not, click on Continue to go the next interaction.",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
