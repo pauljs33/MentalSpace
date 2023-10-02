@@ -3,11 +3,11 @@
   "disableInputWhenNotFocused": true,
   "mangledName": "Sc_232ne_32Paul",
   "name": "Scène Paul",
-  "r": 243,
+  "r": 255,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 241,
+  "v": 242,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4753585087126945,
+    "zoomFactor": 0.4303403802207665,
     "windowMask": false
   },
   "objectsGroups": [
@@ -452,7 +452,7 @@
         "fontSize": 30,
         "visible": true,
         "color": "0;0;0",
-        "fontFamily": "mononoki-Regular.ttf",
+        "fontFamily": "Papernotes.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -470,8 +470,8 @@
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
-        "color": "0;0;0",
-        "fontFamily": "mononoki-Regular.ttf",
+        "color": "255;255;255",
+        "fontFamily": "Papernotes.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -498,7 +498,7 @@
         "fontSize": 30,
         "visible": true,
         "color": "0;0;0",
-        "fontFamily": "mononoki-Regular.ttf",
+        "fontFamily": "Papernotes.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -842,9 +842,9 @@
         }
       ],
       "string": "Text",
-      "font": "..\\..\\..\\Downloads\\my_handwriting_3\\My_handwriting.ttf",
+      "font": "Freehand Blockletter Bold.ttf",
       "textAlignment": "left",
-      "characterSize": 20,
+      "characterSize": 18,
       "color": {
         "b": 59,
         "g": 59,
@@ -1038,49 +1038,6 @@
                       }
                     ]
                   ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "BackGroundFXValid",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "NewSprite3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
                 }
               ]
             }
@@ -2050,7 +2007,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(255,255))+\";\"+ToString(RandomInRange(255,255))+\";0\""
+                "\"255;128;128\""
               ]
             },
             {
@@ -2072,7 +2029,7 @@
               "parameters": [
                 "KeyWord",
                 "CircleOfEmo",
-                "-12\n",
+                "-20",
                 "0"
               ]
             },
@@ -2184,7 +2141,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(255,255))+\";\"+ToString(RandomInRange(255,255))+\";0\""
+                "\"255;84;69\""
               ]
             },
             {
@@ -2206,7 +2163,7 @@
               "parameters": [
                 "KeyWord",
                 "CircleOfEmo",
-                "-15",
+                "-5",
                 "0"
               ]
             },
@@ -2228,7 +2185,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Socks\""
+                "\"SOCKS\""
               ]
             }
           ]
@@ -2318,7 +2275,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(255,255))+\";\"+ToString(RandomInRange(255,255))+\";0\""
+                "\"255;172;172\""
               ]
             },
             {
@@ -2340,7 +2297,7 @@
               "parameters": [
                 "KeyWord",
                 "CircleOfEmo",
-                "0",
+                "-20",
                 "0"
               ]
             },
@@ -2362,7 +2319,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Retirement\""
+                "\"RETIREMENT\""
               ]
             }
           ]
@@ -2452,7 +2409,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;82;82\""
               ]
             },
             {
@@ -2469,22 +2426,12 @@
             },
             {
               "type": {
-                "value": "TextObject::Text::SetFontSize"
-              },
-              "parameters": [
-                "KeyWord",
-                "=",
-                "15"
-              ]
-            },
-            {
-              "type": {
                 "value": "MettreAutour"
               },
               "parameters": [
                 "KeyWord",
                 "CircleOfEmo",
-                "0",
+                "-5",
                 "0"
               ]
             },
@@ -2506,7 +2453,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Shop\""
+                "\"SHOP\""
               ]
             }
           ]
@@ -2596,7 +2543,7 @@
               },
               "parameters": [
                 "CircleOfEmo",
-                "ToString(RandomInRange(150,250))+\";160;160\""
+                "\"255;37;37\""
               ]
             },
             {
@@ -2618,7 +2565,7 @@
               "parameters": [
                 "KeyWord",
                 "CircleOfEmo",
-                "0",
+                "-5",
                 "0"
               ]
             },
@@ -2650,7 +2597,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Time\""
+                "\"TIME\""
               ]
             }
           ]
@@ -6886,7 +6833,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -6974,7 +6920,7 @@
             "TextAnswerHolder",
             "Opacity",
             "=",
-            "100"
+            "255"
           ]
         },
         {
@@ -9281,6 +9227,14 @@
           "parameters": [
             "TextAnswerHolderAutotype",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "TextAnswerHolder"
           ]
         },
         {
