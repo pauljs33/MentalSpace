@@ -795,7 +795,7 @@
         "alwaysLoaded": false,
         "file": "assets/Transparent Button With White Blue Border_Idle.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Transparent Button With White Blue Border_Idle.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Transparent Button With White Blue Border_Idle.png",
         "smoothed": true,
         "userAdded": false,
@@ -854,6 +854,24 @@
         "name": "tuto2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

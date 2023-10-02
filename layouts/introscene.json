@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4303403802207662,
+    "zoomFactor": 0.27962265218393795,
     "windowMask": false
   },
   "objectsGroups": [
@@ -56,6 +56,12 @@
         },
         {
           "name": "_1_"
+        },
+        {
+          "name": "NewSprite2"
+        },
+        {
+          "name": "NewSprite3"
         }
       ]
     }
@@ -152,7 +158,7 @@
       "width": 0,
       "x": 62,
       "y": 57,
-      "zOrder": -1,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -232,6 +238,38 @@
       "x": 729,
       "y": 915,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 183,
+      "customSize": true,
+      "depth": 1,
+      "height": 286,
+      "layer": "",
+      "name": "NewSprite2",
+      "persistentUuid": "c498c896-cc64-433b-b778-78420203601a",
+      "width": 318,
+      "x": 475,
+      "y": 252,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 339,
+      "customSize": true,
+      "depth": 1,
+      "height": 236,
+      "layer": "",
+      "name": "NewSprite3",
+      "persistentUuid": "e013c110-1b39-4c68-bff1-723f2d303fcd",
+      "width": 236,
+      "x": 1209,
+      "y": 702,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -449,8 +487,8 @@
           "textAlignment": "center",
           "characterSize": 25,
           "color": {
-            "b": 255,
-            "g": 255,
+            "b": 25,
+            "g": 25,
             "r": 255
           }
         },
@@ -598,9 +636,156 @@
         "align": "left",
         "wordWrap": true
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 7
+                      },
+                      {
+                        "x": 64,
+                        "y": 7
+                      },
+                      {
+                        "x": 64,
+                        "y": 60
+                      },
+                      {
+                        "x": 4,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite3",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 28
+                      },
+                      {
+                        "x": 62,
+                        "y": 28
+                      },
+                      {
+                        "x": 62,
+                        "y": 44
+                      },
+                      {
+                        "x": 5,
+                        "y": 44
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Tuto"
+          ]
+        }
+      ]
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -630,6 +815,32 @@
           "parameters": [
             "Tuto",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "Start",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Scène Paul\"",
+            "yes"
           ]
         }
       ]
