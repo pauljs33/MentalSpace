@@ -819,7 +819,20 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 0.25
+          },
+          "stringParameters": {
+            "color": "59;59;59"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Sticker",
@@ -829,9 +842,9 @@
         }
       ],
       "string": "Text",
-      "font": "mononoki-Regular.ttf",
-      "textAlignment": "center",
-      "characterSize": 12,
+      "font": "..\\..\\..\\Downloads\\my_handwriting_3\\My_handwriting.ttf",
+      "textAlignment": "left",
+      "characterSize": 20,
       "color": {
         "b": 59,
         "g": 59,
@@ -1909,7 +1922,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2060,7 +2072,7 @@
               "parameters": [
                 "KeyWord",
                 "CircleOfEmo",
-                "-25",
+                "-12\n",
                 "0"
               ]
             },
@@ -2082,7 +2094,7 @@
               "parameters": [
                 "KeyWord",
                 "=",
-                "\"Computer\""
+                "\"COMPUTER\""
               ]
             }
           ]
